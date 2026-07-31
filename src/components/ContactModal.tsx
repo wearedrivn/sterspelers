@@ -24,6 +24,8 @@ export const ContactModal: React.FC<ContactModalProps> = ({
   const [servicePreference, setServicePreference] = useState('Buitenspelen & TSO');
   const [notes, setNotes] = useState(initialDetails);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   useEffect(() => {
     if (initialRole) setRole(initialRole);
@@ -32,9 +34,38 @@ export const ContactModal: React.FC<ContactModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const encode = (data: Record<string, string>) =>
+    Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setSubmitError(false);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'contact',
+          role,
+          name,
+          email,
+          phone,
+          schoolName,
+          city,
+          pupilsCount,
+          servicePreference,
+          notes,
+        }),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -271,12 +302,19 @@ export const ContactModal: React.FC<ContactModalProps> = ({
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#0F172A] text-white font-extrabold text-sm hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2"
+                  disabled={submitting}
+                  className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#0F172A] text-white font-extrabold text-sm hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <Send className="w-4 h-4 text-[#F4B400]" />
-                  <span>Verstuur Aanvraag</span>
+                  <span>{submitting ? 'Bezig met versturen...' : 'Verstuur Aanvraag'}</span>
                 </button>
               </div>
+
+              {submitError && (
+                <p className="text-xs text-red-600 font-medium text-center sm:text-right">
+                  Er ging iets mis bij het versturen. Probeer het opnieuw of bel ons direct.
+                </p>
+              )}
 
             </form>
           )}
