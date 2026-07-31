@@ -2,6 +2,7 @@ node_modules/
 build/
 dist/
 dist-test/
+dist-test2/
 coverage/
 .DS_Store
 *.log
