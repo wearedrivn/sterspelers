@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, ShieldCheck, ArrowRight, Heart, CheckCircle2 } from 'lucide-react';
+import { Mail, CheckCircle2 } from 'lucide-react';
 
 interface FooterProps {
   onOpenContact: () => void;
@@ -28,9 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-6">
             <a href="#" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-[#F4B400] text-[#0F172A] font-black text-2xl flex items-center justify-center shadow-md">
-                S
-              </div>
+              <img src="/favicon-180.png" alt="" className="w-10 h-10" />
               <div className="flex flex-col">
                 <span className="text-2xl font-extrabold tracking-tight text-white leading-none">
                   Sterspelers<span className="text-[#F4B400]">.</span>
@@ -55,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
                   100% VOG Geverifieerd
                 </span>
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
-                  Kinder-EHBO & BHV
+                  BHV Gecertificeerd
                 </span>
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
                   TSO Kwaliteitskader
@@ -138,14 +136,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
               Contact & Locaties
             </h4>
             <div className="space-y-3 text-xs text-slate-300">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#F4B400] shrink-0 mt-0.5" />
-                <span>Hoofdkantoor: Maliebaan 42, 3581 CR Utrecht</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#F4B400] shrink-0" />
-                <a href="tel:0851234567" className="hover:underline">085 - 123 4567</a>
-              </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#F4B400] shrink-0" />
                 <a href="mailto:info@sterspelers.nl" className="hover:underline">info@sterspelers.nl</a>
@@ -188,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
 
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Sterspelers B.V. Alle rechten voorbehouden.</p>
+          <p>© {new Date().getFullYear()} Sterspelers V.O.F. Alle rechten voorbehouden.</p>
           <div className="flex items-center space-x-6">
             <a href="#" className="hover:text-slate-300 transition-colors">Privacybeleid</a>
             <a href="#" className="hover:text-slate-300 transition-colors">Algemene Voorwaarden</a>

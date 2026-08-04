@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, ChevronRight, Menu, X, Sparkles, ShieldCheck } from 'lucide-react';
+import sterspelersLogo from '../assets/images/sterspelers-logo-transparent.png';
 
 interface NavbarProps {
   onOpenContact: (role?: string) => void;
@@ -43,18 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-10 h-10 rounded-xl bg-[#0F172A] flex items-center justify-center text-[#F4B400] font-bold text-xl shadow-md group-hover:scale-105 transition-transform duration-300 border border-slate-800">
-              S
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-[#0F172A] leading-tight flex items-center gap-1.5">
-                Sterspelers
-                <span className="inline-block w-2 h-2 rounded-full bg-[#F4B400]"></span>
-              </span>
-              <span className="text-[11px] font-medium text-slate-500 uppercase tracking-widest -mt-0.5">
-                Professionele Begeleiding
-              </span>
-            </div>
+            <img
+              src={sterspelersLogo}
+              alt="Sterspelers"
+              className="h-14 w-auto group-hover:scale-105 transition-transform duration-300"
+            />
           </a>
 
           {/* Desktop Navigation Links */}

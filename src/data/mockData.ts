@@ -124,10 +124,10 @@ export const VALUES: ValueProp[] = [
     iconName: 'ShieldCheck',
     title: 'Veilig & Geborgd',
     subtitle: 'Veiligheid staat altijd voorop',
-    description: 'Iedere Sterspeler is in het bezit van een geldige VOG, EHBO-certificaat voor kinderen en heeft onze interne Veiligheidsacademie doorlopen.',
+    description: 'Iedere Sterspeler is in het bezit van een geldige VOG en heeft onze interne Veiligheidsacademie doorlopen.',
     keyPoints: [
       '100% VOG-gecontroleerd personeel',
-      'Kinder-EHBO en BHV gecertificeerd',
+      'BHV gecertificeerd',
       'Strikte protocollen voor calamiteiten'
     ],
     badge: 'Gegarandeerde Veiligheid'
@@ -271,7 +271,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-2',
     category: 'scholen',
     question: 'Aan welke pedagogische eisen en kwalificaties voldoen de begeleiders?',
-    answer: 'Al onze begeleiders bezitten een Verklaring Omtrent het Gedrag (VOG), een geldige Kinder-EHBO/BHV certificering en een pedagogische of sportgerelateerde opleiding (MBO/HBO Sport en Bewegen, ALO, PABO of Pedagogiek). Bovendien volgen zij jaarlijks trainingen aan onze eigen Sterspelers Academie.'
+    answer: 'Al onze begeleiders bezitten een Verklaring Omtrent het Gedrag (VOG), een geldige BHV-certificering en een pedagogische of sportgerelateerde opleiding (MBO/HBO Sport en Bewegen, ALO, PABO of Pedagogiek). Bovendien volgen zij jaarlijks trainingen aan onze eigen Sterspelers Academie.'
   },
   {
     id: 'faq-3',

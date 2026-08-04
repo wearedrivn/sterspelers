@@ -115,7 +115,7 @@ export const WhyUs: React.FC = () => {
               VOG Geverifieerd
             </span>
             <span className="text-xs font-semibold bg-slate-100 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200">
-              Kinder-EHBO
+              BHV Gecertificeerd
             </span>
           </div>
         </div>
