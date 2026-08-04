@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </div>
           <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold">
             <Star className="w-3.5 h-3.5 text-[#F4B400] fill-[#F4B400]" />
-            <span>9.6 / 10 Klanttevredenheid</span>
+            <span>Persoonlijke & Snelle Aanpak</span>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            Sterspelers ontzorgt schoolbesturen en leerkrachten met gediplomeerde sport- en TSO-begeleiders. Een doordacht pauzeklimaat waar ieder kind telt.
+            Sterspelers ontzorgt schoolbesturen en leerkrachten met ervaren sport- en TSO-begeleiders. Een doordacht pauzeklimaat waar ieder kind telt.
           </p>
 
           {/* Target Audience Pills */}
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-[#F4B400]" />
-              <span>150+ Actieve Scholen</span>
+              <span>Vaste, Persoonlijke Begeleiders</span>
             </div>
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-[#F4B400]" />
@@ -133,8 +133,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 ★
               </div>
               <div>
-                <div className="text-sm font-bold">25.000+ Kinderen</div>
-                <div className="text-xs text-slate-300">Dagelijks in beweging</div>
+                <div className="text-sm font-bold">VOG-Gecertificeerd</div>
+                <div className="text-xs text-slate-300">Veilig & betrouwbaar team</div>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { School, Smile, Trophy, Star, ShieldCheck, TrendingUp } from 'lucide-react';
+import { School, Smile, Trophy, Star, ShieldCheck, TrendingUp, Zap, Users } from 'lucide-react';
 import { STATS } from '../data/mockData';
 
 export const Statistics: React.FC = () => {
@@ -13,6 +13,10 @@ export const Statistics: React.FC = () => {
         return <Trophy className="w-6 h-6 text-[#0F172A]" />;
       case 'Star':
         return <Star className="w-6 h-6 text-[#0F172A] fill-[#F4B400]" />;
+      case 'Zap':
+        return <Zap className="w-6 h-6 text-[#0F172A]" />;
+      case 'Users':
+        return <Users className="w-6 h-6 text-[#0F172A]" />;
       default:
         return <ShieldCheck className="w-6 h-6 text-[#0F172A]" />;
     }
@@ -26,13 +30,13 @@ export const Statistics: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/80 border border-amber-200 text-amber-950 text-xs font-semibold mb-3">
             <TrendingUp className="w-3.5 h-3.5 text-[#F4B400]" />
-            <span>Aantoonbare Impact op Het Schoolplein</span>
+            <span>Waar Wij Voor Staan</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight">
-            Cijfers die ons verhaal vertellen
+            Onze belofte aan elke school
           </h2>
           <p className="mt-3 text-slate-600 text-base sm:text-lg">
-            Dagelijks bouwen we aan een veilige, beweegrijke en plezierige schoolomgeving voor duizenden kinderen in heel Nederland.
+            We bouwen aan een veilige, beweegrijke en plezierige schoolomgeving — met een persoonlijke aanpak en korte lijnen.
           </p>
         </div>
 
@@ -51,7 +55,7 @@ export const Statistics: React.FC = () => {
                   {getIcon(stat.icon)}
                 </div>
                 <span className="text-xs font-bold text-slate-600 uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-full">
-                  Landelijke impact
+                  Onze belofte
                 </span>
               </div>
 

@@ -11,31 +11,31 @@ export const ACTIVITEITEN_IMAGE = activiteitenImage;
 
 export const STATS: StatItem[] = [
   {
-    value: '150+',
-    numericValue: 150,
-    label: 'Scholen & Besturen',
-    sublabel: 'Actief in 35+ Nederlandse gemeenten',
-    icon: 'School'
+    value: '100%',
+    numericValue: 100,
+    label: 'VOG-Gecertificeerd',
+    sublabel: 'Al onze begeleiders zijn gescreend en betrouwbaar',
+    icon: 'ShieldCheck'
   },
   {
-    value: '25.000+',
-    numericValue: 25000,
-    label: 'Kinderen Bereikt',
-    sublabel: 'Dagelijks veilige & actieve pauzes',
-    icon: 'Smile'
+    value: '1-2 weken',
+    numericValue: 2,
+    label: 'Snel Inzetbaar',
+    sublabel: 'Van kennismaking tot start op uw schoolplein',
+    icon: 'Zap'
   },
   {
-    value: '12.000+',
-    numericValue: 12000,
-    label: 'Activiteiten Georganiseerd',
-    sublabel: 'Sport, spel en creatieve clinics',
-    icon: 'Trophy'
+    value: 'Vast',
+    numericValue: 1,
+    label: 'Persoonlijke Begeleiding',
+    sublabel: 'Vaste, herkenbare begeleiders per school',
+    icon: 'Users'
   },
   {
-    value: '9.6 / 10',
-    numericValue: 9.6,
-    label: 'Tevredenheidsscore',
-    sublabel: 'Beoordeeld door schooldirecteuren',
+    value: 'Kwaliteit',
+    numericValue: 1,
+    label: 'Kwaliteit & Snel Schakelen',
+    sublabel: 'Persoonlijke aanpak met korte lijnen',
     icon: 'Star'
   }
 ];
@@ -70,12 +70,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'kinderbegeleiding',
     title: 'Kinderbegeleiding',
     subtitle: 'Professionele Tussenschoolse Opvang (TSO)',
-    description: 'Volledige ontzorging van de tussenschoolse opvang met gediplomeerde pedagogisch medewerkers en duidelijke dagstructuur.',
+    description: 'Volledige ontzorging van de tussenschoolse opvang met ervaren pedagogisch medewerkers en duidelijke dagstructuur.',
     image: KINDERBEGELEIDING_IMAGE,
     badge: 'Volledig Ontzorgd',
     audience: 'Schoolbesturen & Basisscholen',
     highlights: [
-      'Vaste gediplomeerde begeleiders per klas',
+      'Vaste, ervaren begeleiders per klas',
       'Rustige lunchovergang en positieve bejegening',
       'Voldoet aan alle wettelijke TSO-kwaliteitsnormen'
     ],
@@ -109,7 +109,7 @@ export const SERVICES: ServiceItem[] = [
       targetAge: '4 t/m 16 jaar',
       keyBenefits: [
         'Direct inzetbaar voor de Rijke Schooldag',
-        'Professionele gastdocenten en gediplomeerde trainers',
+        'Professionele gastdocenten en ervaren trainers',
         'Inclusief alle professionele sport- en spelmaterialen',
         'Eenvoudige ouderinlog en inschrijfsysteem'
       ],
@@ -265,7 +265,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-1',
     category: 'scholen',
     question: 'Hoe waarborgt Sterspelers de continuïteit bij ziekte van een begeleider?',
-    answer: 'Sterspelers werkt met regionale invalpools van gediplomeerde begeleiders die reeds bekend zijn met onze protocollen. Bij onverhoopte ziekte staat er binnen 60 minuten een vervangende Sterspeler op de locatie.'
+    answer: 'Sterspelers werkt met regionale invalpools van ervaren begeleiders die reeds bekend zijn met onze protocollen. Bij onverhoopte ziekte staat er binnen 60 minuten een vervangende Sterspeler op de locatie.'
   },
   {
     id: 'faq-2',
@@ -300,9 +300,8 @@ export const FAQS: FaqItem[] = [
 ];
 
 export const TRUST_PARTNERS = [
-  { name: 'Basisschool De Zevenster', location: 'Utrecht' },
-  { name: 'Onderwijsstichting Primair', location: 'Amsterdam' },
-  { name: 'Kindcentrum Het Kompas', location: 'Amersfoort' },
-  { name: 'Gemeente Hilversum', location: 'Hilversum' },
-  { name: 'Kwaliteitsnetwerk TSO', location: 'Nederland' }
+  { name: 'Basisschool R.K. Paus Johannes', location: '' },
+  { name: 'Onderwijsstichting Primair', location: '' },
+  { name: 'Basisschool ICBS Het Zaanplein', location: 'Zaanstad' },
+  { name: 'Gemeente Amsterdam en Gemeente Zaanstad', location: '' }
 ];

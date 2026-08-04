@@ -5,6 +5,7 @@ dist-test/
 dist-test2/
 dist-test3/
 dist-test4/
+dist-test5/
 coverage/
 .DS_Store
 *.log
