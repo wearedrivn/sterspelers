@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Lock, LogOut, RefreshCcw, Inbox } from 'lucide-react';
+import { DashboardSchools } from './DashboardSchools';
 
 interface Submission {
   id: string;
@@ -13,6 +14,7 @@ export const Dashboard: React.FC = () => {
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [activeTab, setActiveTab] = useState<'aanvragen' | 'scholen'>('aanvragen');
 
   const fetchSubmissions = async (pw: string) => {
     setLoading(true);
@@ -88,18 +90,24 @@ export const Dashboard: React.FC = () => {
       <div className="max-w-6xl mx-auto space-y-6">
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div>
-            <h1 className="text-2xl font-black text-[#0F172A]">Contactaanvragen</h1>
-            <p className="text-sm text-slate-500">{submissions.length} aanvraag(en) ontvangen</p>
+            <h1 className="text-2xl font-black text-[#0F172A]">Sterspelers Dashboard</h1>
+            <p className="text-sm text-slate-500">
+              {activeTab === 'aanvragen'
+                ? `${submissions.length} aanvraag(en) ontvangen`
+                : 'Overzicht van scholen, begeleiders en notities'}
+            </p>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              onClick={() => fetchSubmissions(password)}
-              disabled={loading}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-60"
-            >
-              <RefreshCcw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-              Vernieuwen
-            </button>
+            {activeTab === 'aanvragen' && (
+              <button
+                onClick={() => fetchSubmissions(password)}
+                disabled={loading}
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-60"
+              >
+                <RefreshCcw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+                Vernieuwen
+              </button>
+            )}
             <button
               onClick={handleLogout}
               className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#0F172A] text-white text-sm font-semibold hover:bg-slate-800 transition-colors"
@@ -110,7 +118,32 @@ export const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        {submissions.length === 0 ? (
+        <div className="flex items-center gap-2 border-b border-slate-200">
+          <button
+            onClick={() => setActiveTab('aanvragen')}
+            className={`px-4 py-2.5 text-sm font-semibold border-b-2 transition-colors ${
+              activeTab === 'aanvragen'
+                ? 'border-[#0F172A] text-[#0F172A]'
+                : 'border-transparent text-slate-500 hover:text-slate-700'
+            }`}
+          >
+            Aanvragen
+          </button>
+          <button
+            onClick={() => setActiveTab('scholen')}
+            className={`px-4 py-2.5 text-sm font-semibold border-b-2 transition-colors ${
+              activeTab === 'scholen'
+                ? 'border-[#0F172A] text-[#0F172A]'
+                : 'border-transparent text-slate-500 hover:text-slate-700'
+            }`}
+          >
+            Scholen
+          </button>
+        </div>
+
+        {activeTab === 'scholen' ? (
+          <DashboardSchools password={password} />
+        ) : submissions.length === 0 ? (
           <div className="bg-white rounded-2xl border border-slate-200 p-16 text-center text-slate-500 flex flex-col items-center gap-3">
             <Inbox className="w-8 h-8 text-slate-300" />
             <p className="text-sm">Nog geen aanvragen binnengekomen.</p>

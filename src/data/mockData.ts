@@ -1,9 +1,13 @@
 import { ServiceItem, ValueProp, StepItem, Testimonial, FaqItem, StatItem } from '../types';
+import heroImage from '../assets/images/hero_kids_playing_1785453295922.jpg';
+import buitenspelenImage from '../assets/images/buitenspelen_card_1785453308815.jpg';
+import kinderbegeleidingImage from '../assets/images/kinderbegeleiding_card_1785453321147.jpg';
+import activiteitenImage from '../assets/images/activiteiten_card_1785453333528.jpg';
 
-export const HERO_IMAGE = '/src/assets/images/hero_kids_playing_1785453295922.jpg';
-export const BUITENSPELEN_IMAGE = '/src/assets/images/buitenspelen_card_1785453308815.jpg';
-export const KINDERBEGELEIDING_IMAGE = '/src/assets/images/kinderbegeleiding_card_1785453321147.jpg';
-export const ACTIVITEITEN_IMAGE = '/src/assets/images/activiteiten_card_1785453333528.jpg';
+export const HERO_IMAGE = heroImage;
+export const BUITENSPELEN_IMAGE = buitenspelenImage;
+export const KINDERBEGELEIDING_IMAGE = kinderbegeleidingImage;
+export const ACTIVITEITEN_IMAGE = activiteitenImage;
 
 export const STATS: StatItem[] = [
   {

@@ -3,6 +3,8 @@ build/
 dist/
 dist-test/
 dist-test2/
+dist-test3/
+dist-test4/
 coverage/
 .DS_Store
 *.log
