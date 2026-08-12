@@ -69,18 +69,18 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'kinderbegeleiding',
     title: 'Kinderbegeleiding',
-    subtitle: 'Professionele Tussenschoolse Opvang (TSO)',
-    description: 'Volledige ontzorging van de tussenschoolse opvang met ervaren pedagogisch medewerkers en duidelijke dagstructuur.',
+    subtitle: 'Begeleiding Tijdens de Pauze (met of zonder TSO)',
+    description: 'Volledige ontzorging tijdens de pauze — of dit nu officieel als TSO is georganiseerd of niet — met ervaren pedagogisch medewerkers en duidelijke dagstructuur.',
     image: KINDERBEGELEIDING_IMAGE,
     badge: 'Volledig Ontzorgd',
     audience: 'Schoolbesturen & Basisscholen',
     highlights: [
       'Vaste, ervaren begeleiders per klas',
       'Rustige lunchovergang en positieve bejegening',
-      'Voldoet aan alle wettelijke TSO-kwaliteitsnormen'
+      'Voldoet aan de geldende kwaliteitsnormen, ook bij TSO'
     ],
     details: {
-      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving gedurende het lunchuur. Onze begeleiders hebben een pedagogische achtergrond en zorgen voor een rustige eetsfeer en een naadloze overgang naar het buitenspelen.',
+      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving tijdens de pauze, ongeacht of dit officieel als TSO is georganiseerd. Onze begeleiders hebben een pedagogische achtergrond en zorgen voor rust, structuur en een naadloze overgang naar het buitenspelen.',
       targetAge: 'Basisonderwijs & Speciaal Basisonderwijs',
       keyBenefits: [
         'Vaste en herkenbare gezichten voor kinderen en ouders',
