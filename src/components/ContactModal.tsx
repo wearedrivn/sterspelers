@@ -21,7 +21,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
   const [schoolName, setSchoolName] = useState('');
   const [city, setCity] = useState('');
   const [pupilsCount, setPupilsCount] = useState('150-300');
-  const [servicePreference, setServicePreference] = useState('Buitenspelen & TSO');
+  const [servicePreference, setServicePreference] = useState('Buitenspelen & Begeleiding');
   const [notes, setNotes] = useState(initialDetails);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -270,9 +270,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   onChange={(e) => setServicePreference(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
                 >
-                  <option value="Buitenspelen & TSO">Actief Buitenspelen & TSO Begeleiding</option>
+                  <option value="Buitenspelen & Begeleiding">Actief Buitenspelen & Begeleiding</option>
                   <option value="Alleen Buitenspelen">Alleen Spelbegeleiding op het schoolplein</option>
-                  <option value="Alleen TSO">Alleen TSO Kinderbegeleiding</option>
+                  <option value="Alleen Kinderbegeleiding">Alleen Kinderbegeleiding</option>
                   <option value="Na-schoolse Clinics">Na-schoolse Sport & Spel Clinics</option>
                   <option value="Adviesgesprek">Vrijblijvende Audit op locatie</option>
                 </select>

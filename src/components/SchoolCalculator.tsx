@@ -8,10 +8,10 @@ interface SchoolCalculatorProps {
 export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContactWithDetails }) => {
   const [pupils, setPupils] = useState<number>(250);
   const [daysPerWeek, setDaysPerWeek] = useState<number>(5);
-  const [serviceType, setServiceType] = useState<'buitenspelen' | 'tso' | 'combi'>('combi');
+  const [serviceType, setServiceType] = useState<'buitenspelen' | 'begeleiding' | 'combi'>('combi');
 
-  // Calculation Logic
-  const ratio = serviceType === 'tso' ? 25 : 30;
+  // Calculation Logic: vanaf 100 leerlingen worden 3 begeleiders geadviseerd, en schaalt vanaf daar verder op.
+  const ratio = serviceType === 'buitenspelen' ? 38 : serviceType === 'combi' ? 30 : 34;
   const recommendedSupervisors = Math.max(2, Math.ceil(pupils / ratio));
   const teacherHoursSavedPerMonth = Math.round(pupils * 0.8 * (daysPerWeek / 5));
   const incidentReduction = Math.min(75, Math.round(55 + (daysPerWeek * 3)));
@@ -107,7 +107,7 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
                 <div className="grid grid-cols-3 gap-2">
                   {[
                     { id: 'buitenspelen', label: 'Buitenspelen' },
-                    { id: 'tso', label: 'TSO Begeleiding' },
+                    { id: 'begeleiding', label: 'Begeleiding' },
                     { id: 'combi', label: 'Totaalpakket' }
                   ].map((srv) => (
                     <button

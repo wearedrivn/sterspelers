@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            Sterspelers ontzorgt schoolbesturen en leerkrachten met ervaren sport- en TSO-begeleiders. Een doordacht pauzeklimaat waar ieder kind telt.
+            Sterspelers ontzorgt schoolbesturen en leerkrachten met ervaren begeleiders. Een doordacht pauzeklimaat waar ieder kind telt.
           </p>
 
           {/* Target Audience Pills */}

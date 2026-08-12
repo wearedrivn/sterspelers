@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
                   BHV Gecertificeerd
                 </span>
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
-                  TSO Kwaliteitskader
+                  Kwaliteitskader Begeleiding
                 </span>
               </div>
             </div>
@@ -75,7 +75,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
               </li>
               <li>
                 <a href="#diensten" className="hover:text-amber-300 transition-colors">
-                  Kinderbegeleiding (TSO)
+                  Kinderbegeleiding
                 </a>
               </li>
               <li>

@@ -69,18 +69,18 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'kinderbegeleiding',
     title: 'Kinderbegeleiding',
-    subtitle: 'Begeleiding Tijdens de Pauze (met of zonder TSO)',
-    description: 'Volledige ontzorging tijdens de pauze — of dit nu officieel als TSO is georganiseerd of niet — met ervaringsdeskundige begeleiders en duidelijke dagstructuur.',
+    subtitle: 'Begeleiding Tijdens de Pauze',
+    description: 'Volledige ontzorging tijdens de pauze met ervaringsdeskundige begeleiders en duidelijke dagstructuur.',
     image: KINDERBEGELEIDING_IMAGE,
     badge: 'Volledig Ontzorgd',
     audience: 'Schoolbesturen & Basisscholen',
     highlights: [
       'Vaste, ervaren begeleiders per klas',
       'Rustige lunchovergang en positieve bejegening',
-      'Voldoet aan de geldende kwaliteitsnormen, ook bij TSO'
+      'Voldoet aan de geldende kwaliteitsnormen'
     ],
     details: {
-      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving tijdens de pauze, ongeacht of dit officieel als TSO is georganiseerd. Onze begeleiders hebben een pedagogische achtergrond en zorgen voor rust, structuur en een naadloze overgang naar het buitenspelen.',
+      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving tijdens de pauze. Onze begeleiders hebben een pedagogische achtergrond en zorgen voor rust, structuur en een naadloze overgang naar het buitenspelen.',
       targetAge: 'Basisonderwijs & Speciaal Basisonderwijs',
       keyBenefits: [
         'Vaste en herkenbare gezichten voor kinderen en ouders',
@@ -289,7 +289,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-5',
     category: 'ouders',
     question: 'Wat kost de inzet van Sterspelers voor een basisschool?',
-    answer: 'Aangezien iedere school uniek is qua leerlingenaantal, pleinindeling en gewenste begeleidingsgraad, maken we altijd een maatwerkberekening. Door onze efficiënte planning liggen de kosten vaak lager dan het zelf organiseren en beheren van TSO.'
+    answer: 'Aangezien iedere school uniek is qua leerlingenaantal, pleinindeling en gewenste begeleidingsgraad, maken we altijd een maatwerkberekening. Door onze efficiënte planning liggen de kosten vaak lager dan het zelf organiseren en beheren van de begeleiding.'
   },
   {
     id: 'faq-6',
