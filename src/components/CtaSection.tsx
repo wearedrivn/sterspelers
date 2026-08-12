@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Phone, Mail, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 
 interface CtaSectionProps {
   onOpenContact: () => void;
@@ -47,8 +47,8 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Action Button */}
+            <div className="pt-4 flex items-center justify-center">
               <button
                 onClick={onOpenContact}
                 className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#F4B400] text-[#0F172A] font-extrabold text-base hover:bg-amber-400 transition-all duration-300 shadow-xl flex items-center justify-center gap-3 group active:scale-95"
@@ -56,14 +56,6 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
                 <span>Vraag Vrijblijvende Brochure Aan</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-
-              <a
-                href="tel:0851234567"
-                className="w-full sm:w-auto px-6 py-4 rounded-full bg-slate-800/80 hover:bg-slate-700 text-white font-semibold text-base transition-colors flex items-center justify-center gap-2 border border-slate-700"
-              >
-                <Phone className="w-4 h-4 text-[#F4B400]" />
-                <span>085 - 123 4567</span>
-              </a>
             </div>
 
             <p className="text-xs text-slate-400">

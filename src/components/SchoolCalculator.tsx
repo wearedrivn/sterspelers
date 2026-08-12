@@ -11,7 +11,8 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
   const [serviceType, setServiceType] = useState<'buitenspelen' | 'begeleiding' | 'combi'>('combi');
 
   // Calculation Logic: vanaf 100 leerlingen worden 3 begeleiders geadviseerd, en schaalt vanaf daar verder op.
-  const ratio = serviceType === 'buitenspelen' ? 38 : serviceType === 'combi' ? 30 : 34;
+  // Zelfde verhouding voor elke gekozen dienst, zodat het advies voorspelbaar blijft.
+  const ratio = 34;
   const recommendedSupervisors = Math.max(2, Math.ceil(pupils / ratio));
   const teacherHoursSavedPerMonth = Math.round(pupils * 0.8 * (daysPerWeek / 5));
   const incidentReduction = Math.min(75, Math.round(55 + (daysPerWeek * 3)));
