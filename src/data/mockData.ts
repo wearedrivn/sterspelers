@@ -70,7 +70,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'kinderbegeleiding',
     title: 'Kinderbegeleiding',
     subtitle: 'Begeleiding Tijdens de Pauze (met of zonder TSO)',
-    description: 'Volledige ontzorging tijdens de pauze — of dit nu officieel als TSO is georganiseerd of niet — met ervaren pedagogisch medewerkers en duidelijke dagstructuur.',
+    description: 'Volledige ontzorging tijdens de pauze — of dit nu officieel als TSO is georganiseerd of niet — met ervaringsdeskundige begeleiders en duidelijke dagstructuur.',
     image: KINDERBEGELEIDING_IMAGE,
     badge: 'Volledig Ontzorgd',
     audience: 'Schoolbesturen & Basisscholen',
@@ -295,7 +295,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-6',
     category: 'ouders',
     question: 'Hoe worden ouders geïnformeerd over de activiteiten en eventuele incidenten?',
-    answer: 'Wij communiceren rechtstreeks via het bestaande ouderportaal van de school (bijv. Social Schools of Parro) of via onze periodieke nieuwsbrief. Bij bijzonderheden tijdens de pauze is er altijd een directe overdracht met de groepsleerkracht.'
+    answer: 'Bijzonderheden tijdens de pauze communiceren wij rechtstreeks met de groepsleerkracht, die dit vervolgens terugkoppelt aan de ouders.'
   }
 ];
 
