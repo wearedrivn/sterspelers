@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         {/* Main Headline & Supporting Text */}
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0F172A] tracking-tight leading-[1.08]">
-            Professionele Pauzebegeleiding voor een{' '}
+            Professionele Begeleiding voor een{' '}
             <span className="relative inline-block text-[#0F172A] bg-gradient-to-r from-amber-200/80 via-amber-100/60 to-amber-200/80 bg-no-repeat bg-[length:100%_35%] bg-bottom px-1">
               Veilig & Energiek
             </span>{' '}
@@ -104,6 +104,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               src={HERO_IMAGE}
               alt="Kinderen spelen buiten op schoolplein onder begeleiding van Sterspelers"
               referrerPolicy="no-referrer"
+              loading="eager"
+              fetchPriority="high"
+              width={1376}
+              height={768}
               className="w-full h-[380px] sm:h-[480px] md:h-[580px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             

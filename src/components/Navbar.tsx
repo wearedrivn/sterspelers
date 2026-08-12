@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, ChevronRight, Menu, X, Sparkles, ShieldCheck } from 'lucide-react';
-import sterspelersLogo from '../assets/images/sterspelers-logo-transparent.png';
+import sterspelersLogo from '../assets/images/sterspelers-logo-500.png';
 
 interface NavbarProps {
   onOpenContact: (role?: string) => void;
@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             <img
               src={sterspelersLogo}
               alt="Sterspelers"
-              className="h-14 w-auto group-hover:scale-105 transition-transform duration-300"
+              className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </a>
 

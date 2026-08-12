@@ -1,8 +1,8 @@
 import { ServiceItem, ValueProp, StepItem, Testimonial, FaqItem, StatItem } from '../types';
-import heroImage from '../assets/images/hero_kids_playing_1785453295922.jpg';
-import buitenspelenImage from '../assets/images/buitenspelen_card_1785453308815.jpg';
-import kinderbegeleidingImage from '../assets/images/kinderbegeleiding_card_1785453321147.jpg';
-import activiteitenImage from '../assets/images/activiteiten_card_1785453333528.jpg';
+import heroImage from '../assets/images/hero.webp';
+import buitenspelenImage from '../assets/images/buitenspelen.webp';
+import kinderbegeleidingImage from '../assets/images/kinderbegeleiding.webp';
+import activiteitenImage from '../assets/images/activiteiten.webp';
 
 export const HERO_IMAGE = heroImage;
 export const BUITENSPELEN_IMAGE = buitenspelenImage;
@@ -85,7 +85,7 @@ export const SERVICES: ServiceItem[] = [
       keyBenefits: [
         'Vaste en herkenbare gezichten voor kinderen en ouders',
         'Professioneel incidenten- en communicatieprotocol',
-        'Koppeling tussen schoolvisie en pauzebegeleiding',
+        'Koppeling tussen schoolvisie en begeleiding',
         'Continuïteit gegarandeerd bij ziekte of uitval'
       ],
       certification: 'Conform Wet Kinderopvang & NIK-kwaliteitskader'
@@ -300,8 +300,6 @@ export const FAQS: FaqItem[] = [
 ];
 
 export const TRUST_PARTNERS = [
-  { name: 'Basisschool R.K. Paus Johannes', location: '' },
   { name: 'Onderwijsstichting Primair', location: '' },
-  { name: 'Basisschool ICBS Het Zaanplein', location: 'Zaanstad' },
   { name: 'Gemeente Amsterdam en Gemeente Zaanstad', location: '' }
 ];

@@ -51,6 +51,9 @@ export const Services: React.FC<ServicesProps> = ({ onOpenContact }) => {
                   src={service.image}
                   alt={service.title}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  width={1000}
+                  height={746}
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-[#0F172A]/20 to-transparent" />

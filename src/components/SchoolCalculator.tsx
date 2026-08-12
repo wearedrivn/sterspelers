@@ -80,7 +80,7 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
               {/* Days Per Week Selection */}
               <div className="space-y-3 bg-slate-800/60 p-6 rounded-2xl border border-slate-700/60">
                 <label className="text-sm font-bold text-slate-200 block">
-                  Aantal dagen per week pauzebegeleiding
+                  Aantal dagen per week begeleiding
                 </label>
                 <div className="grid grid-cols-3 gap-3">
                   {[3, 4, 5].map((days) => (
