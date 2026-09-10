@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, CheckCircle2 } from 'lucide-react';
+import { Mail, Phone, MessageCircle, CheckCircle2 } from 'lucide-react';
 
 interface FooterProps {
   onOpenContact: () => void;
@@ -139,6 +139,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#F4B400] shrink-0" />
                 <a href="mailto:info@sterspelers.nl" className="hover:underline">info@sterspelers.nl</a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-[#F4B400] shrink-0" />
+                <a href="tel:+31752340345" className="hover:underline">075 234 0345</a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0" />
+                <a
+                  href="https://wa.me/31752340345"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  WhatsApp ons
+                </a>
               </div>
             </div>
 

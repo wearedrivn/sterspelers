@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Phone, MessageCircle } from 'lucide-react';
 
 interface CtaSectionProps {
   onOpenContact: () => void;
@@ -48,7 +48,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
             </div>
 
             {/* Action Button */}
-            <div className="pt-4 flex items-center justify-center">
+            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
               <button
                 onClick={onOpenContact}
                 className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#F4B400] text-[#0F172A] font-extrabold text-base hover:bg-amber-400 transition-all duration-300 shadow-xl flex items-center justify-center gap-3 group active:scale-95"
@@ -56,6 +56,22 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
                 <span>Vraag Vrijblijvende Brochure Aan</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
+              <a
+                href="tel:+31752340345"
+                className="w-full sm:w-auto px-6 py-4 rounded-full bg-slate-800 text-white font-bold text-sm hover:bg-slate-700 transition-all duration-300 flex items-center justify-center gap-2 border border-slate-700"
+              >
+                <Phone className="w-4 h-4 text-[#F4B400]" />
+                <span>075 234 0345</span>
+              </a>
+              <a
+                href="https://wa.me/31752340345"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-6 py-4 rounded-full bg-emerald-600 text-white font-bold text-sm hover:bg-emerald-500 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp</span>
+              </a>
             </div>
 
             <p className="text-xs text-slate-400">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronUp, Sparkles, MessageSquare } from 'lucide-react';
+import { ChevronUp, Sparkles, MessageSquare, Phone, MessageCircle } from 'lucide-react';
 
 interface FloatingCtaProps {
   onOpenContact: () => void;
@@ -24,6 +24,26 @@ export const FloatingCta: React.FC<FloatingCtaProps> = ({ onOpenContact }) => {
 
   return (
     <div className="fixed bottom-6 right-6 z-40 flex items-center gap-3 animate-fade-in">
+
+      {/* Quick Phone Call Button */}
+      <a
+        href="tel:+31752340345"
+        className="flex items-center justify-center w-11 h-11 rounded-full bg-white text-[#0F172A] shadow-2xl border border-slate-200 hover:scale-105 transition-transform"
+        aria-label="Bel Sterspelers"
+      >
+        <Phone className="w-4 h-4" />
+      </a>
+
+      {/* Quick WhatsApp Button */}
+      <a
+        href="https://wa.me/31752340345"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-11 h-11 rounded-full bg-emerald-500 text-white shadow-2xl hover:scale-105 transition-transform"
+        aria-label="WhatsApp Sterspelers"
+      >
+        <MessageCircle className="w-4 h-4" />
+      </a>
 
       {/* Primary Floating CTA Pill */}
       <button
