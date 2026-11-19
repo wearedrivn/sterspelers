@@ -89,9 +89,9 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenContact }) => {
                 </span>
               </div>
 
-              <h4 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A]">
                 {STEPS[activeStep].title}
-              </h4>
+              </h3>
 
               <p className="text-slate-600 text-sm leading-relaxed">
                 {STEPS[activeStep].description}

@@ -3,9 +3,15 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Phone, MessageCircle }
 
 interface CtaSectionProps {
   onOpenContact: () => void;
+  title?: string;
+  text?: string;
 }
 
-export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
+export const CtaSection: React.FC<CtaSectionProps> = ({
+  onOpenContact,
+  title = 'Klaar voor een energiek, veilig en ontspannen pauzeklimaat?',
+  text = 'Laat ons u laten zien hoe we uw leerkrachten ontlasten en de speelvreugde verhogen. Vraag vandaag nog onze informatiemap aan of plan een adviesgesprek op uw school.',
+}) => {
   return (
     <section className="py-20 md:py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,11 +30,11 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenContact }) => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-              Klaar voor een energiek, veilig en ontspannen pauzeklimaat?
+              {title}
             </h2>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-              Laat ons u laten zien hoe we uw leerkrachten ontlasten en de speelvreugde verhogen. Vraag vandaag nog onze informatiemap aan of plan een adviesgesprek op uw school.
+              {text}
             </p>
 
             {/* Guarantees */}

@@ -1,13 +1,27 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.tsx';
 import { Dashboard } from './components/Dashboard.tsx';
+import { normalizePath } from './seo/routes';
 import './index.css';
 
-const isDashboard = window.location.pathname.replace(/\/$/, '') === '/dashboard';
+const container = document.getElementById('root')!;
+const path = normalizePath(window.location.pathname);
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    {isDashboard ? <Dashboard /> : <App />}
-  </StrictMode>,
-);
+if (path === '/dashboard') {
+  // Dashboard is alleen client-side (achter login, niet geïndexeerd).
+  createRoot(container).render(
+    <StrictMode>
+      <Dashboard />
+    </StrictMode>,
+  );
+} else {
+  const app = (
+    <StrictMode>
+      <App path={path} />
+    </StrictMode>
+  );
+  // In productie is de HTML vooraf gerenderd: hydrateren. In dev (lege root) gewoon renderen.
+  if (container.firstElementChild) hydrateRoot(container, app);
+  else createRoot(container).render(app);
+}

@@ -1,6 +1,7 @@
 node_modules/
 build/
 dist/
+dist-ssr/
 dist-test/
 dist-test2/
 dist-test3/

@@ -49,7 +49,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenContact }) => {
               <div className="relative h-64 overflow-hidden bg-slate-900">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={service.imageAlt}
                   referrerPolicy="no-referrer"
                   loading="lazy"
                   width={1000}
@@ -128,7 +128,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenContact }) => {
             <div className="relative h-56 sm:h-64 bg-slate-900">
               <img
                 src={selectedService.image}
-                alt={selectedService.title}
+                alt={selectedService.imageAlt}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />

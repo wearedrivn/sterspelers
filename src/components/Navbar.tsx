@@ -23,11 +23,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Diensten', href: '#diensten' },
-    { name: 'Waarom Sterspelers', href: '#waarom-ons' },
-    { name: 'Hoe het werkt', href: '#hoe-het-werkt' },
-    { name: 'Rekentool', href: '#rekentool' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Diensten', href: '/#diensten' },
+    { name: 'Waarom Sterspelers', href: '/#waarom-ons' },
+    { name: 'Hoe het werkt', href: '/#hoe-het-werkt' },
+    { name: 'Rekentool', href: '/#rekentool' },
+    { name: 'FAQ', href: '/#faq' },
   ];
 
   return (
@@ -42,10 +42,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         <div className="flex items-center justify-between">
           
           {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-3 group focus:outline-none">
+          <a href="/" className="flex items-center gap-3 group focus:outline-none" aria-label="Sterspelers home">
             <img
               src={sterspelersLogo}
-              alt="Sterspelers"
+              alt="Sterspelers logo"
+              width={500}
+              height={500}
               className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </a>

@@ -100,9 +100,9 @@ export const WhyUs: React.FC = () => {
               <Award className="w-6 h-6 text-[#0F172A]" />
             </div>
             <div>
-              <h4 className="text-base font-extrabold text-[#0F172A]">
+              <h3 className="text-base font-extrabold text-[#0F172A]">
                 Erkend Pedagogisch & Sportief Kwaliteitskader
-              </h4>
+              </h3>
               <p className="text-xs text-slate-500">
                 Onze medewerkers volgen jaarlijks bijscholing aan de Sterspelers Academie.
               </p>

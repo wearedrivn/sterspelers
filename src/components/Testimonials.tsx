@@ -102,6 +102,7 @@ export const Testimonials: React.FC = () => {
                     src={current.avatar}
                     alt={current.name}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                     className="w-14 h-14 rounded-full object-cover border-2 border-[#F4B400] shadow-xs"
                   />
                   <div>

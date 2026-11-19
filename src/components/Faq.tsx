@@ -89,6 +89,8 @@ export const Faq: React.FC<FaqProps> = ({ onOpenContact }) => {
                 >
                   <button
                     onClick={() => toggleItem(faq.id)}
+                    aria-expanded={isOpen}
+                    aria-controls={`${faq.id}-answer`}
                     className="w-full text-left p-6 flex items-center justify-between gap-4 focus:outline-none"
                   >
                     <span className="text-base sm:text-lg font-bold text-[#0F172A]">
@@ -103,11 +105,13 @@ export const Faq: React.FC<FaqProps> = ({ onOpenContact }) => {
                     </div>
                   </button>
 
-                  {isOpen && (
-                    <div className="px-6 pb-6 pt-0 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100/60 mt-2">
-                      <p className="pt-3">{faq.answer}</p>
-                    </div>
-                  )}
+                  <div
+                    id={`${faq.id}-answer`}
+                    hidden={!isOpen}
+                    className="px-6 pb-6 pt-0 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100/60 mt-2"
+                  >
+                    <p className="pt-3">{faq.answer}</p>
+                  </div>
                 </div>
               );
             })

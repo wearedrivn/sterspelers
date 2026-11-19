@@ -3,8 +3,5 @@
   publish = "dist"
   functions = "netlify/functions"
 
-# Let client-side routes (like /dashboard) load index.html directly.
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Elke route is vooraf gerenderd naar een eigen HTML-bestand (bv. /pleincoach -> pleincoach.html).
+# Er is daarom geen catch-all naar index.html meer: onbekende URL's krijgen 404.html met status 404.

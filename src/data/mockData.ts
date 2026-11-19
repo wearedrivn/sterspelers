@@ -47,6 +47,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: 'Energiek & Georganiseerd Pauzeklimaat',
     description: 'Structurele ondersteuning op het schoolplein die kinderen uitdaagt te bewegen, samen te werken en op te laden voor de middaglessen.',
     image: BUITENSPELEN_IMAGE,
+    imageAlt: 'Pleincoach van Sterspelers begeleidt een balspel met kinderen op het schoolplein',
     badge: 'Pleincoaches',
     audience: 'Basisscholen',
     highlights: [
@@ -72,6 +73,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: 'Begeleiding Tijdens de Pauze',
     description: 'Volledige ontzorging tijdens de pauze met ervaringsdeskundige begeleiders en duidelijke dagstructuur.',
     image: KINDERBEGELEIDING_IMAGE,
+    imageAlt: 'Begeleider van Sterspelers met een groep basisschoolkinderen tijdens de pauze',
     badge: 'Volledig Ontzorgd',
     audience: 'Schoolbesturen & Basisscholen',
     highlights: [
@@ -97,6 +99,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: 'Na-schoolse Sport & Creatieve Workshops',
     description: 'Inspirerende sportclinics, cultuurworkshops en bewegingsprogrammas die aansluiten bij gemeentelijke doelen en schoolthema’s.',
     image: ACTIVITEITEN_IMAGE,
+    imageAlt: 'Kinderen doen mee aan een sportclinic van Sterspelers na schooltijd',
     badge: 'Sport & Cultuur',
     audience: 'Gemeenten, Scholen & BSO',
     highlights: [

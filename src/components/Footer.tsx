@@ -27,8 +27,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
           
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-6">
-            <a href="#" className="flex items-center gap-3 group">
-              <img src="/favicon-180.png" alt="" className="w-10 h-10" />
+            <a href="/" className="flex items-center gap-3 group">
+              <img src="/favicon-180.png" alt="Sterspelers logo" width={40} height={40} loading="lazy" className="w-10 h-10" />
               <div className="flex flex-col">
                 <span className="text-2xl font-extrabold tracking-tight text-white leading-none">
                   Sterspelers<span className="text-[#F4B400]">.</span>
@@ -64,9 +64,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
 
           {/* Nav Links Column 1 */}
           <div className="space-y-4">
-            <h4 className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
+            <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
               Diensten
-            </h4>
+            </p>
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <a href="#diensten" className="hover:text-amber-300 transition-colors">
@@ -98,9 +98,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
 
           {/* Nav Links Column 2 */}
           <div className="space-y-4">
-            <h4 className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
+            <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
               Doelgroepen
-            </h4>
+            </p>
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
@@ -132,9 +132,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
 
           {/* Contact & Newsletter Column */}
           <div className="space-y-4">
-            <h4 className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
+            <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
               Contact & Locaties
-            </h4>
+            </p>
             <div className="space-y-3 text-xs text-slate-300">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#F4B400] shrink-0" />

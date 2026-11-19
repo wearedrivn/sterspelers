@@ -6,6 +6,7 @@ export interface ServiceItem {
   subtitle: string;
   description: string;
   image: string;
+  imageAlt: string;
   highlights: string[];
   audience: string;
   badge: string;
