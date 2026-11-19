@@ -178,7 +178,7 @@ export const DashboardSchools: React.FC<DashboardSchoolsProps> = ({ password }) 
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                placeholder="Basisschool De Zevenster"
+                placeholder="Naam van de school"
                 className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
               />
             </div>
@@ -188,7 +188,7 @@ export const DashboardSchools: React.FC<DashboardSchoolsProps> = ({ password }) 
                 type="text"
                 value={form.city}
                 onChange={(e) => setForm({ ...form, city: e.target.value })}
-                placeholder="Utrecht"
+                placeholder="Zaandam"
                 className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
               />
             </div>
