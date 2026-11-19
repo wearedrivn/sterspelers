@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             </a>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Sterspelers is de toonaangevende specialist in tussenschoolse opvang, actief buitenspelen en na-schoolse bewegingsprogramma’s voor scholen en gemeenten in Nederland.
+              Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen, schoolbesturen en gemeenten in Zaanstad en Amsterdam.
             </p>
 
             {/* Certifications Row */}

@@ -15,7 +15,6 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
   const ratio = 34;
   const recommendedSupervisors = Math.max(2, Math.ceil(pupils / ratio));
   const teacherHoursSavedPerMonth = Math.round(pupils * 0.8 * (daysPerWeek / 5));
-  const incidentReduction = Math.min(75, Math.round(55 + (daysPerWeek * 3)));
 
   const handleApply = () => {
     const details = `Rekentool Uitkomst: ${pupils} leerlingen, ${daysPerWeek} dagen/week, Type: ${serviceType.toUpperCase()} (Advies: ${recommendedSupervisors} begeleiders, ${teacherHoursSavedPerMonth} uur bespaard voor docenten/maand).`;
@@ -46,7 +45,7 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
                   Bereken de impact voor uw school
                 </h2>
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                  Vul de gegevens van uw school in en bekijk direct het geadviseerde aantal begeleiders, tijdswinst voor leerkrachten en verwachte kwaliteitsstijging.
+                  Vul de gegevens van uw school in en bekijk direct het geadviseerde aantal begeleiders, en de tijdswinst voor leerkrachten.
                 </p>
               </div>
 
@@ -166,12 +165,12 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
 
                 {/* Result 3 */}
                 <div className="bg-slate-900/80 p-5 rounded-2xl border border-slate-700/80 space-y-1">
-                  <span className="text-xs text-slate-400 font-medium">Incidenten Vermindering</span>
+                  <span className="text-xs text-slate-400 font-medium">Vervanging bij Uitval</span>
                   <div className="text-3xl font-extrabold text-sky-400">
-                    -{incidentReduction}%
+                    &lt; 60 min
                   </div>
                   <p className="text-[11px] text-slate-400">
-                    Minder conflicten op het plein
+                    Vervangende begeleider op locatie
                   </p>
                 </div>
 

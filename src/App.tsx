@@ -13,6 +13,9 @@ import { Footer } from './components/Footer';
 import { ContactModal } from './components/ContactModal';
 import { FloatingCta } from './components/FloatingCta';
 
+// Zet op true zodra er echte reviews in TESTIMONIALS staan.
+const SHOW_TESTIMONIALS = false;
+
 export default function App() {
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const [modalRole, setModalRole] = useState('Schooldirecteur');
@@ -58,7 +61,7 @@ export default function App() {
         />
 
         {/* Section 6: Testimonials */}
-        <Testimonials />
+        {SHOW_TESTIMONIALS && <Testimonials />}
 
         {/* Section 7: FAQ */}
         <Faq onOpenContact={() => handleOpenContact('Schooldirecteur')} />

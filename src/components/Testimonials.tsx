@@ -22,6 +22,9 @@ export const Testimonials: React.FC = () => {
 
   const current = filteredTestimonials[currentIndex] || TESTIMONIALS[0];
 
+  // Geen echte reviews: sectie niet tonen.
+  if (!current) return null;
+
   return (
     <section id="ervaringen" className="py-20 md:py-32 bg-[#F8F9FB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

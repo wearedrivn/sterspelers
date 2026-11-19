@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, ShieldCheck, Star, Users, CheckCircle, ArrowUpRight, Sparkles } from 'lucide-react';
-import { HERO_IMAGE, TRUST_PARTNERS } from '../data/mockData';
+import { HERO_IMAGE } from '../data/mockData';
 
 interface HeroProps {
   onOpenContact: (role?: string) => void;
@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200/80 shadow-xs">
             <span className="flex h-2 w-2 rounded-full bg-[#F4B400] animate-pulse" />
             <span className="text-xs font-semibold text-slate-800 tracking-wide">
-              Dé Partner voor Scholen & Besturen in Nederland
+              Pleincoaches voor basisscholen in Zaanstad & Amsterdam
             </span>
           </div>
           <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold">
@@ -120,10 +120,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 <span className="text-xs font-bold uppercase tracking-wider text-[#0F172A] bg-amber-100 px-2.5 py-0.5 rounded-full">
                   Pauzeklimaat in Actie
                 </span>
-                <span className="text-xs text-slate-500 font-medium">Utrecht & Amsterdam</span>
+                <span className="text-xs text-slate-500 font-medium">Zaanstad & Amsterdam</span>
               </div>
               <p className="text-sm font-semibold text-[#0F172A] leading-snug">
-                “Met georganiseerde spelzones en vaste begeleiders daalt het aantal incidenten met meer dan 60%.”
+                Vaste pleincoaches, duidelijke spelzones en heldere afspraken met het team: zo werken we aan een rustig en actief schoolplein.
               </p>
               <div className="flex items-center gap-2 text-xs text-slate-600 pt-1">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
@@ -143,19 +143,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             </div>
           </div>
 
-          {/* Trust Partner Logos Bar below image */}
+          {/* Partner search block (no claimed partners until there are real ones) */}
           <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-              Vertrouwd door vooraanstaande besturen & gemeenten:
-            </span>
-            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 opacity-80">
-              {TRUST_PARTNERS.map((partner, i) => (
-                <div key={i} className="flex items-center gap-2 text-slate-700 font-semibold text-xs md:text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F4B400]"></span>
-                  <span>{partner.name}</span>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm font-semibold text-slate-700 text-center md:text-left">
+              Op zoek naar onze eerste partnerscholen in Zaanstad en Amsterdam
+            </p>
+            <button
+              onClick={() => onOpenContact()}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-[#0F172A] text-sm font-semibold transition-colors"
+            >
+              <span>Plan een kennismaking</span>
+              <ChevronRight className="w-4 h-4 text-[#F4B400]" />
+            </button>
           </div>
 
         </div>

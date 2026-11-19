@@ -47,12 +47,12 @@ export const SERVICES: ServiceItem[] = [
     subtitle: 'Energiek & Georganiseerd Pauzeklimaat',
     description: 'Structurele ondersteuning op het schoolplein die kinderen uitdaagt te bewegen, samen te werken en op te laden voor de middaglessen.',
     image: BUITENSPELEN_IMAGE,
-    badge: 'Populairst bij Scholen',
-    audience: 'Primaire & Secundaire Scholen',
+    badge: 'Pleincoaches',
+    audience: 'Basisscholen',
     highlights: [
       'Gecertificeerde spelbegeleiders op het plein',
       'Actieve spelmaterialen & thematische zones',
-      'Vermindering van pauze-incidenten met 65%'
+      'Duidelijke spelzones en vaste afspraken op het plein'
     ],
     details: {
       overview: 'Buitenspelen met Sterspelers transformeert de pauze op school van een onrustig meethoofd naar een georganiseerde, positieve beleving. Onze sport- en spelbegeleiders richten het schoolplein in met duidelijke zones, stimuleren inclusiviteit en ontlasten leerkrachten volledig.',
@@ -209,56 +209,9 @@ export const STEPS: StepItem[] = [
   }
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Margreet van de Berg',
-    role: 'Schooldirecteur',
-    organization: 'Basisschool De Zevenster, Utrecht',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200',
-    category: 'scholen',
-    quote: 'Sinds de samenwerking met Sterspelers is het rustiger op het schoolplein en komen onze leerlingen energiek en ontspannen terug in de klas. Onze leerkrachten ervaren eindelijk een échte pauze.',
-    rating: 5,
-    location: 'Utrecht',
-    highlightText: 'Minder pauze-incidenten & gemoedsrust voor leerkrachten'
-  },
-  {
-    id: '2',
-    name: 'Robert Jan Visser',
-    role: 'Voorzitter College van Bestuur',
-    organization: 'Onderwijsstichting Primair, Amsterdam',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200',
-    category: 'besturen',
-    quote: 'Sterspelers levert een constante, hoge pedagogische kwaliteit over al onze 12 locaties. Geen administratieve rompslomp meer voor ons bestuur, maar pure professionaliteit.',
-    rating: 5,
-    location: 'Amsterdam',
-    highlightText: 'Constante kwaliteit over 12 locaties'
-  },
-  {
-    id: '3',
-    name: 'Sanne & Daan de Ruiter',
-    role: 'Ouders van Lucas (Groep 5)',
-    organization: 'Kindcentrum Het Kompas, Amersfoort',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200',
-    category: 'ouders',
-    quote: 'Lucas keek vroeger op tegen de drukke lunchpauze. Dankzij de Sterspelers coaches heeft hij nu vaste vrienden gemaakt bij de sportspelletjes. Als ouder geef je je kind met een gerust hart mee.',
-    rating: 5,
-    location: 'Amersfoort',
-    highlightText: 'Vaste vrienden en een veilig gevoel'
-  },
-  {
-    id: '4',
-    name: 'Karin Mulder',
-    role: 'Beleidsadviseur Jeugd & Sport',
-    organization: 'Gemeente Hilversum',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200',
-    category: 'scholen',
-    quote: 'De combinatie van sport, spel en beweging na schooltijd sluit naadloos aan bij onze gemeentelijke gezondheidsdoelen. De participatie onder kwetsbare doelgroepen is aantoonbaar gestegen.',
-    rating: 5,
-    location: 'Hilversum',
-    highlightText: 'Aantoonbare stijging in sportparticipatie'
-  }
-];
+// Reviews staan uit tot er echte, toestemde reviews van partnerscholen zijn.
+// Voeg ze hier toe en zet SHOW_TESTIMONIALS in App.tsx op true.
+export const TESTIMONIALS: Testimonial[] = [];
 
 export const FAQS: FaqItem[] = [
   {
@@ -297,9 +250,4 @@ export const FAQS: FaqItem[] = [
     question: 'Hoe worden ouders geïnformeerd over de activiteiten en eventuele incidenten?',
     answer: 'Bijzonderheden tijdens de pauze communiceren wij rechtstreeks met de groepsleerkracht, die dit vervolgens terugkoppelt aan de ouders.'
   }
-];
-
-export const TRUST_PARTNERS = [
-  { name: 'Onderwijsstichting Primair', location: '' },
-  { name: 'Gemeente Amsterdam en Gemeente Zaanstad', location: '' }
 ];
