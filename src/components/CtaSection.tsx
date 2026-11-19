@@ -45,7 +45,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#F4B400]" />
-                <span>Maatwerk voorstel binnen 24 uur</span>
+                <span>Voorstel op maat</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#F4B400]" />

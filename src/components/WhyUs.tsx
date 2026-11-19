@@ -101,7 +101,7 @@ export const WhyUs: React.FC = () => {
             </div>
             <div>
               <h3 className="text-base font-extrabold text-[#0F172A]">
-                Erkend Pedagogisch & Sportief Kwaliteitskader
+                Opgeleid via de Sterspelers Academie
               </h3>
               <p className="text-xs text-slate-500">
                 Onze medewerkers volgen jaarlijks bijscholing aan de Sterspelers Academie.

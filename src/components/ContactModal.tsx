@@ -96,7 +96,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
               Ontvang maatwerk informatie voor uw school
             </h3>
             <p className="text-xs sm:text-sm text-slate-300">
-              Vul onderstaande gegevens in en wij sturen u binnen 24 uur onze uitgebreide informatiemap en adviesvoorstel toe.
+              Vul onderstaande gegevens in en wij nemen zo snel mogelijk contact met u op met onze informatiemap en een adviesvoorstel.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   Aanvraag Succesvol Ontvangen!
                 </h4>
                 <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
-                  Bedankt {name}. Onze onderwijsadviseur neemt binnen 24 uur persoonlijk contact met u op. De informatiemap voor <strong>{schoolName || 'uw school'}</strong> is naar {email} verstuurd.
+                  Bedankt {name}. We nemen zo snel mogelijk persoonlijk contact met u op. Uw aanvraag voor <strong>{schoolName || 'uw school'}</strong> is goed ontvangen.
                 </p>
               </div>
 

@@ -197,7 +197,7 @@ export const SchoolCalculator: React.FC<SchoolCalculatorProps> = ({ onOpenContac
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <p className="text-center text-xs text-slate-400">
-                  ✓ Binnen 24 uur een gespecificeerd voorstel in uw mailbox.
+                  ✓ Vrijblijvend: we nemen persoonlijk contact met u op.
                 </p>
               </div>
 

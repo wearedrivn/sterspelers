@@ -65,7 +65,7 @@ export const SERVICES: ServiceItem[] = [
         'Kinderen komen energiek en gefocust terug in de klas',
         'Inclusieve spelvormen voor ieder bewegingsniveau'
       ],
-      certification: 'Pedagogisch Veilig Keurmerk & VOG-gecontroleerd'
+      certification: 'VOG-gescreend & BHV-gecertificeerd'
     }
   },
   {
@@ -92,7 +92,7 @@ export const SERVICES: ServiceItem[] = [
         'Koppeling tussen schoolvisie en begeleiding',
         'Continuïteit gegarandeerd bij ziekte of uitval'
       ],
-      certification: 'Conform Wet Kinderopvang & NIK-kwaliteitskader'
+      certification: 'VOG-gescreend & BHV-gecertificeerd'
     }
   },
   {
@@ -108,7 +108,7 @@ export const SERVICES: ServiceItem[] = [
     highlights: [
       'Clinics in atletiek, balvaardigheid, dans & freerun',
       'Maatwerk programma’s voor BLA/Rijke Schooldag',
-      'Rapportage van participatie en motorische voortgang'
+      'Vaste trainers en eigen sport- en spelmaterialen'
     ],
     details: {
       overview: 'Onze speciale activiteiten stimuleren de motorische en sociale ontwikkeling van kinderen buiten het reguliere onderwijsprogramma. Ideaal ter invulling van de Rijke Schooldag, vakantiesport en gemeentelijke subsidietrajecten.',
@@ -116,10 +116,9 @@ export const SERVICES: ServiceItem[] = [
       keyBenefits: [
         'Direct inzetbaar voor de Rijke Schooldag',
         'Professionele gastdocenten en ervaren trainers',
-        'Inclusief alle professionele sport- en spelmaterialen',
-        'Eenvoudige ouderinlog en inschrijfsysteem'
+        'Inclusief alle professionele sport- en spelmaterialen'
       ],
-      certification: 'NOC*NSF Erkende Sportbegeleiding'
+      certification: 'VOG-gescreend & BHV-gecertificeerd'
     }
   }
 ];
@@ -162,7 +161,7 @@ export const VALUES: ValueProp[] = [
       'Stimuleren van samenwerking & inclusiviteit',
       'Focus op emotionele en motorische groei'
     ],
-    badge: 'Pedagogisch Kwaliteitskader'
+    badge: 'Pedagogische Aanpak'
   },
   {
     id: 'betrouwbaar',

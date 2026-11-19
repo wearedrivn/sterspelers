@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             {/* Certifications Row */}
             <div className="pt-2 space-y-2">
               <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
-                Kwaliteitskeurmerken & Waarborgen:
+                Waarborgen:
               </span>
               <div className="flex flex-wrap gap-2 text-xs">
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
@@ -54,9 +54,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
                 </span>
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
                   BHV Gecertificeerd
-                </span>
-                <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
-                  Kwaliteitskader Begeleiding
                 </span>
               </div>
             </div>

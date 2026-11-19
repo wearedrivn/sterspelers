@@ -80,13 +80,13 @@ export const Statistics: React.FC = () => {
           
           <div className="space-y-1 text-center md:text-left relative z-10">
             <div className="text-amber-400 font-bold text-xs uppercase tracking-widest">
-              Gegarandeerd Kwaliteitskader
+              Vrijblijvende Kennismaking
             </div>
             <h3 className="text-xl sm:text-2xl font-bold">
               Klaar om het pauzeklimaat op uw school te transformeren?
             </h3>
             <p className="text-slate-300 text-sm max-w-xl">
-              Onze audit brengt binnen 1 week in kaart hoe we uw leerkrachten ontlasten en de speelvreugde verhogen.
+              In een kennismaking op school brengen we samen in kaart hoe we uw leerkrachten kunnen ontlasten.
             </p>
           </div>
 
