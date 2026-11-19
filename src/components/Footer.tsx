@@ -62,73 +62,61 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             </div>
           </div>
 
-          {/* Nav Links Column 1 */}
-          <div className="space-y-4">
+          {/* Diensten */}
+          <nav aria-label="Diensten" className="space-y-4">
             <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
               Diensten
             </p>
             <ul className="space-y-2.5 text-sm text-slate-300">
-              <li>
-                <a href="#diensten" className="hover:text-amber-300 transition-colors">
-                  Actief Buitenspelen
-                </a>
-              </li>
-              <li>
-                <a href="#diensten" className="hover:text-amber-300 transition-colors">
-                  Kinderbegeleiding
-                </a>
-              </li>
-              <li>
-                <a href="#diensten" className="hover:text-amber-300 transition-colors">
-                  Na-schoolse Clinics
-                </a>
-              </li>
-              <li>
-                <a href="#rekentool" className="hover:text-amber-300 transition-colors">
-                  School Impact Rekentool
-                </a>
-              </li>
-              <li>
-                <a href="#hoe-het-werkt" className="hover:text-amber-300 transition-colors">
-                  Implementatie in 3 stappen
-                </a>
-              </li>
+              {[
+                { name: 'Pleincoach basisschool', href: '/pleincoach' },
+                { name: 'Pauzebegeleiding', href: '/pauzebegeleiding' },
+                { name: 'TSO & overblijf', href: '/tso-overblijf' },
+                { name: 'Rijke Schooldag & clinics', href: '/rijke-schooldag' },
+                { name: 'Rekentool voor scholen', href: '/#rekentool' },
+              ].map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="hover:text-amber-300 transition-colors">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
-          </div>
+          </nav>
 
-          {/* Nav Links Column 2 */}
-          <div className="space-y-4">
+          {/* Regio & Sterspelers */}
+          <nav aria-label="Regio en informatie" className="space-y-4">
             <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
-              Doelgroepen
+              Regio
             </p>
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
-                <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
-                  Voor Schooldirecties
-                </button>
+                <a href="/zaanstad" className="hover:text-amber-300 transition-colors">Pleincoach Zaanstad</a>
               </li>
               <li>
-                <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
-                  Voor Schoolbesturen
-                </button>
-              </li>
-              <li>
-                <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
-                  Voor Gemeenten & Sport
-                </button>
-              </li>
-              <li>
-                <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
-                  Voor Ouders & MR
-                </button>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-amber-300 transition-colors">
-                  Veelgestelde Vragen
-                </a>
+                <a href="/amsterdam" className="hover:text-amber-300 transition-colors">Pleincoach Amsterdam</a>
               </li>
             </ul>
-          </div>
+            <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400] pt-2">
+              Sterspelers
+            </p>
+            <ul className="space-y-2.5 text-sm text-slate-300">
+              <li>
+                <a href="/" className="hover:text-amber-300 transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="/#hoe-het-werkt" className="hover:text-amber-300 transition-colors">Werkwijze</a>
+              </li>
+              <li>
+                <a href="/#faq" className="hover:text-amber-300 transition-colors">Veelgestelde vragen</a>
+              </li>
+              <li>
+                <button onClick={onOpenContact} className="hover:text-amber-300 transition-colors text-left">
+                  Contact & kennismaking
+                </button>
+              </li>
+            </ul>
+          </nav>
 
           {/* Contact & Newsletter Column */}
           <div className="space-y-4">

@@ -170,7 +170,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     id="input-name"
                     type="text"
                     required
-                    placeholder="bijv. Margreet van de Berg"
+                    placeholder="Voor- en achternaam"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
@@ -186,7 +186,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     id="input-email"
                     type="email"
                     required
-                    placeholder="m.vandeberg@school.nl"
+                    placeholder="naam@school.nl"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
@@ -217,7 +217,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <input
                     id="input-school"
                     type="text"
-                    placeholder="Basisschool De Zevenster"
+                    placeholder="Naam van je school of organisatie"
                     value={schoolName}
                     onChange={(e) => setSchoolName(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
@@ -232,7 +232,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <input
                     id="input-city"
                     type="text"
-                    placeholder="Utrecht"
+                    placeholder="Zaandam"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"

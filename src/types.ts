@@ -7,6 +7,8 @@ export interface ServiceItem {
   description: string;
   image: string;
   imageAlt: string;
+  /** Dienstpagina waar 'Lees volledige specificaties' naartoe linkt. */
+  pagePath: string;
   highlights: string[];
   audience: string;
   badge: string;

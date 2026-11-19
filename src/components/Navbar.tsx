@@ -23,10 +23,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Diensten', href: '/#diensten' },
-    { name: 'Waarom Sterspelers', href: '/#waarom-ons' },
-    { name: 'Hoe het werkt', href: '/#hoe-het-werkt' },
-    { name: 'Rekentool', href: '/#rekentool' },
+    { name: 'Pleincoach', href: '/pleincoach' },
+    { name: 'Pauzebegeleiding', href: '/pauzebegeleiding' },
+    { name: 'TSO & overblijf', href: '/tso-overblijf' },
+    { name: 'Rijke Schooldag', href: '/rijke-schooldag' },
+    { name: 'Werkwijze', href: '/#hoe-het-werkt' },
     { name: 'FAQ', href: '/#faq' },
   ];
 
@@ -53,12 +54,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/60 backdrop-blur-sm">
+          <nav aria-label="Hoofdmenu" className="hidden xl:flex items-center space-x-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/60 backdrop-blur-sm">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-2 rounded-full text-sm font-semibold text-slate-700 hover:text-[#0F172A] hover:bg-white transition-all duration-200"
+                className="px-3 xl:px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap text-slate-700 hover:text-[#0F172A] hover:bg-white transition-all duration-200"
               >
                 {link.name}
               </a>
@@ -66,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           </nav>
 
           {/* CTA button */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <a
               href="tel:+31752340345"
               className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors"
@@ -93,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-2 xl:hidden">
             <button
               onClick={() => onOpenContact()}
               className="px-3.5 py-1.5 rounded-full bg-[#0F172A] text-white text-xs font-semibold shadow-xs hover:bg-slate-800"
@@ -113,9 +114,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-4 pt-4 pb-6 mt-2 space-y-3 shadow-xl">
-          <div className="flex flex-col space-y-1">
-            {navLinks.map((link) => (
+        <div className="xl:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-4 pt-4 pb-6 mt-2 space-y-3 shadow-xl">
+          <nav aria-label="Mobiel menu" className="flex flex-col space-y-1">
+            <a
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-base font-medium text-slate-800 hover:bg-slate-100 hover:text-[#0F172A] transition-colors"
+            >
+              Home
+            </a>
+            {[...navLinks, { name: 'Zaanstad', href: '/zaanstad' }, { name: 'Amsterdam', href: '/amsterdam' }].map((link) => (
               <a
                 key={link.name}
                 href={link.href}
@@ -125,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                 {link.name}
               </a>
             ))}
-          </div>
+          </nav>
           <div className="pt-4 border-t border-slate-100 space-y-2">
             <div className="grid grid-cols-2 gap-2">
               <a

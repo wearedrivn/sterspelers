@@ -43,6 +43,7 @@ export const STATS: StatItem[] = [
 export const SERVICES: ServiceItem[] = [
   {
     id: 'buitenspelen',
+    pagePath: '/pleincoach',
     title: 'Buitenspelen',
     subtitle: 'Energiek & Georganiseerd Pauzeklimaat',
     description: 'Structurele ondersteuning op het schoolplein die kinderen uitdaagt te bewegen, samen te werken en op te laden voor de middaglessen.',
@@ -69,6 +70,7 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: 'kinderbegeleiding',
+    pagePath: '/pauzebegeleiding',
     title: 'Kinderbegeleiding',
     subtitle: 'Begeleiding Tijdens de Pauze',
     description: 'Volledige ontzorging tijdens de pauze met ervaringsdeskundige begeleiders en duidelijke dagstructuur.',
@@ -95,6 +97,7 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: 'activiteiten',
+    pagePath: '/rijke-schooldag',
     title: 'Activiteiten & Clinics',
     subtitle: 'Na-schoolse Sport & Creatieve Workshops',
     description: 'Inspirerende sportclinics, cultuurworkshops en bewegingsprogrammas die aansluiten bij gemeentelijke doelen en schoolthema’s.',

@@ -33,15 +33,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         {/* Main Headline & Supporting Text */}
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0F172A] tracking-tight leading-[1.08]">
-            Professionele Begeleiding voor een{' '}
+            Vaste pleincoaches voor een{' '}
             <span className="relative inline-block text-[#0F172A] bg-gradient-to-r from-amber-200/80 via-amber-100/60 to-amber-200/80 bg-no-repeat bg-[length:100%_35%] bg-bottom px-1">
-              Veilig & Energiek
+              Veilig & Actief
             </span>{' '}
             Schoolplein
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            Sterspelers ontzorgt schoolbesturen en leerkrachten met ervaren begeleiders. Een doordacht pauzeklimaat waar ieder kind telt.
+            Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen in Zaanstad en Amsterdam. Kinderen krijgen een veilige, actieve pauze en uw leerkrachten hebben weer echt pauze.
           </p>
 
           {/* Target Audience Pills */}
