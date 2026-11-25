@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             </a>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen, schoolbesturen en gemeenten in Zaanstad en Amsterdam.
+              Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen, schoolbesturen en gemeenten in heel Nederland.
             </p>
 
             {/* Certifications Row */}
@@ -86,6 +86,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             <p className="text-sm font-extrabold uppercase tracking-wider text-[#F4B400]">
               Regio
             </p>
+            <p className="text-sm text-slate-400">Actief op basisscholen in heel Nederland, onder meer in:</p>
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <a href="/zaanstad" className="hover:text-amber-300 transition-colors">Pleincoach Zaanstad</a>

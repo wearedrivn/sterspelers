@@ -238,6 +238,12 @@ export const FAQS: FaqItem[] = [
     answer: 'Ja, absoluut. Onze programma’s en na-schoolse clinics zijn volledig afgestemd op de subsidievoorwaarden van het Programma School en Omgeving (Rijke Schooldag) en gemeentelijke Sportakkoorden. Wij helpen direct mee bij de subsidieaanvraag.'
   },
   {
+    id: 'faq-regio',
+    category: 'scholen',
+    question: 'In welke regio’s is Sterspelers actief?',
+    answer: 'Sterspelers levert pleincoaches en pauzebegeleiding aan basisscholen, schoolbesturen en gemeenten in heel Nederland. Voor Zaanstad en Amsterdam hebben we aparte pagina’s, maar ook daarbuiten komen we graag langs voor een kennismaking.'
+  },
+  {
     id: 'faq-materiaal',
     category: 'scholen',
     question: 'Nemen de begeleiders zelf spelmateriaal mee?',

@@ -14,7 +14,7 @@ export const HOME_ROUTE: RouteMeta = {
   path: '/',
   title: 'Pleincoaches voor basisscholen | Sterspelers',
   description:
-    'Vaste, VOG-gescreende pleincoaches voor een veilig en actief schoolplein in Zaanstad en Amsterdam. Ontlast je leerkrachten. Vraag een gratis kennismaking aan.',
+    'Vaste, VOG-gescreende pleincoaches voor een veilig en actief schoolplein op basisscholen in heel Nederland. Ontlast je leerkrachten. Plan een kennismaking.',
 };
 
 export const NOT_FOUND_ROUTE: RouteMeta = {

@@ -5,10 +5,11 @@ const ORG_ID = `${SITE_URL}/#organization`;
 const BUSINESS_ID = `${SITE_URL}/#business`;
 const LOGO_URL = `${SITE_URL}/logo.png`;
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
-const AREA_SERVED = [
-  { '@type': 'City', name: 'Zaanstad' },
-  { '@type': 'City', name: 'Amsterdam' },
-];
+const NETHERLANDS = { '@type': 'Country', name: 'Nederland', sameAs: 'https://www.wikidata.org/wiki/Q55' };
+const AREA_SERVED = [NETHERLANDS];
+
+/** 'Nederland' wordt een Country, al het andere een City. */
+const toPlace = (name: string) => (name === 'Nederland' ? NETHERLANDS : { '@type': 'City', name });
 
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -42,7 +43,7 @@ function organizationLd() {
         '@id': BUSINESS_ID,
         name: 'Sterspelers',
         description:
-          'Vaste, VOG-gescreende pleincoaches en pauzebegeleiding voor basisscholen, schoolbesturen en gemeenten in Zaanstad en Amsterdam.',
+          'Vaste, VOG-gescreende pleincoaches en pauzebegeleiding voor basisscholen, schoolbesturen en gemeenten in heel Nederland.',
         url: `${SITE_URL}/`,
         logo: LOGO_URL,
         image: OG_IMAGE,
@@ -88,7 +89,7 @@ function serviceLd(route: RouteMeta) {
     description: route.description,
     url: absoluteUrl(route.path),
     provider: { '@id': BUSINESS_ID },
-    areaServed: s.areaServed.map((name) => ({ '@type': 'City', name })),
+    areaServed: s.areaServed.map(toPlace),
     audience: { '@type': 'EducationalAudience', educationalRole: 'Basisschool' },
   };
 }

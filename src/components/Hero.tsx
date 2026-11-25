@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200/80 shadow-xs">
             <span className="flex h-2 w-2 rounded-full bg-[#F4B400] animate-pulse" />
             <span className="text-xs font-semibold text-slate-800 tracking-wide">
-              Pleincoaches voor basisscholen in Zaanstad & Amsterdam
+              Pleincoaches voor basisscholen in heel Nederland
             </span>
           </div>
           <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold">
@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen in Zaanstad en Amsterdam. Kinderen krijgen een veilige, actieve pauze en uw leerkrachten hebben weer echt pauze.
+            Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen in heel Nederland. Kinderen krijgen een veilige, actieve pauze en uw leerkrachten hebben weer echt pauze.
           </p>
 
           {/* Target Audience Pills */}
@@ -120,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 <span className="text-xs font-bold uppercase tracking-wider text-[#0F172A] bg-amber-100 px-2.5 py-0.5 rounded-full">
                   Pauzeklimaat in Actie
                 </span>
-                <span className="text-xs text-slate-500 font-medium">Zaanstad & Amsterdam</span>
+                <span className="text-xs text-slate-500 font-medium">Heel Nederland</span>
               </div>
               <p className="text-sm font-semibold text-[#0F172A] leading-snug">
                 Vaste pleincoaches, duidelijke spelzones en heldere afspraken met het team: zo werken we aan een rustig en actief schoolplein.
@@ -146,7 +146,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           {/* Partner search block (no claimed partners until there are real ones) */}
           <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm font-semibold text-slate-700 text-center md:text-left">
-              Op zoek naar onze eerste partnerscholen in Zaanstad en Amsterdam
+              Op zoek naar onze eerste partnerscholen in heel Nederland
             </p>
             <button
               onClick={() => onOpenContact()}

@@ -57,12 +57,12 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'service',
     title: 'Pleincoach inhuren voor je basisschool | Sterspelers',
     description:
-      'Een vaste, VOG-gescreende pleincoach voor je basisschool in Zaanstad of Amsterdam. Rust en beweging op het plein, ontlasting voor leerkrachten. Plan een kennismaking.',
+      'Een vaste, VOG-gescreende pleincoach voor je basisschool, in heel Nederland. Rust en beweging op het plein, ontlasting voor leerkrachten. Plan een kennismaking.',
     eyebrow: 'Pleincoaches basisschool',
     h1: 'Een vaste pleincoach voor basisscholen',
     intro: [
       'Een pleincoach van Sterspelers zorgt ervoor dat de pauze weer een pauze is: voor de kinderen én voor je leerkrachten. Onze pleincoaches zijn VOG-gescreend, getraind via de Sterspelers Academie en komen elke week opnieuw naar dezelfde school.',
-      'Wil je een pleincoach inhuren voor je basisschool in Zaanstad of Amsterdam? Hieronder lees je wat een pleincoach doet, hoe we werken en hoe je start.',
+      'Wil je een pleincoach inhuren voor je basisschool? We werken op scholen in heel Nederland. Hieronder lees je wat een pleincoach doet, hoe we werken en hoe je start.',
     ],
     image: buitenspelenImage,
     imageAlt: 'Pleincoach van Sterspelers begeleidt een balspel met kinderen op het schoolplein van een basisschool',
@@ -150,7 +150,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     service: {
       name: 'Pleincoach voor basisscholen',
       serviceType: 'Pleincoach / pauzebegeleiding op het schoolplein',
-      areaServed: ['Zaanstad', 'Amsterdam'],
+      areaServed: ['Nederland'],
     },
     related: ['/pauzebegeleiding', '/tso-overblijf', '/zaanstad', '/amsterdam'],
     ctaTitle: 'Benieuwd wat een pleincoach voor jouw school kan betekenen?',
@@ -164,7 +164,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'service',
     title: 'Pauzebegeleiding voor scholen: pleindienst uitbesteden | Sterspelers',
     description:
-      'Pauzebegeleiding op school uitbesteden? Sterspelers neemt de pleindienst over met vaste, VOG-gescreende begeleiders in Zaanstad en Amsterdam. Leerkrachten krijgen hun pauze terug.',
+      'Pleindienst uitbesteden? Sterspelers neemt de pauzebegeleiding over met vaste, VOG-gescreende begeleiders in heel Nederland. Zo hebben leerkrachten echt pauze.',
     eyebrow: 'Pauzebegeleiding school',
     h1: 'Pauzebegeleiding op school: pleindienst uitbesteden',
     intro: [
@@ -237,7 +237,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     service: {
       name: 'Pauzebegeleiding en pleindienst',
       serviceType: 'Pauzebegeleiding / pleindienst uitbesteden',
-      areaServed: ['Zaanstad', 'Amsterdam'],
+      areaServed: ['Nederland'],
     },
     related: ['/pleincoach', '/tso-overblijf', '/rijke-schooldag', '/zaanstad'],
     ctaTitle: 'Pleindienst uitbesteden? Laten we kennismaken.',
@@ -251,7 +251,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'service',
     title: 'TSO uitbesteden: overblijfkrachten voor je basisschool | Sterspelers',
     description:
-      'Tussenschoolse opvang (TSO) uitbesteden aan Sterspelers: vaste, VOG-gescreende overblijfkrachten voor lunch en buitenspelen op basisscholen in Zaanstad en Amsterdam.',
+      'Tussenschoolse opvang (TSO) uitbesteden aan Sterspelers: vaste, VOG-gescreende overblijfkrachten voor lunch en buitenspelen op basisscholen in heel Nederland.',
     eyebrow: 'Tussenschoolse opvang',
     h1: 'TSO uitbesteden: vaste overblijfkrachten voor je basisschool',
     intro: [
@@ -338,7 +338,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     service: {
       name: 'TSO en overblijf uitbesteden',
       serviceType: 'Tussenschoolse opvang / overblijfkrachten',
-      areaServed: ['Zaanstad', 'Amsterdam'],
+      areaServed: ['Nederland'],
     },
     related: ['/pauzebegeleiding', '/pleincoach', '/amsterdam', '/zaanstad'],
     ctaTitle: 'De TSO uit handen geven?',
@@ -352,7 +352,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'service',
     title: 'Rijke Schooldag: sportclinics en naschoolse activiteiten | Sterspelers',
     description:
-      'Sterspelers verzorgt sportclinics en naschoolse activiteiten voor basisscholen en gemeenten in Zaanstad en Amsterdam, als onderdeel van de Rijke Schooldag. Vaste, VOG-gescreende trainers.',
+      'Sportclinics en naschoolse activiteiten voor de Rijke Schooldag, op basisscholen in heel Nederland. Met vaste, VOG-gescreende trainers van Sterspelers.',
     eyebrow: 'Rijke Schooldag aanbieder',
     h1: 'Sportclinics en naschoolse activiteiten voor de Rijke Schooldag',
     intro: [
@@ -440,7 +440,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     service: {
       name: 'Sportclinics en naschoolse activiteiten (Rijke Schooldag)',
       serviceType: 'Sportclinics / naschoolse activiteiten basisschool',
-      areaServed: ['Zaanstad', 'Amsterdam'],
+      areaServed: ['Nederland'],
     },
     related: ['/pleincoach', '/pauzebegeleiding', '/amsterdam', '/zaanstad'],
     ctaTitle: 'Een Rijke Schooldag-programma samenstellen?',
@@ -454,12 +454,12 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'local',
     title: 'Pleincoach Zaanstad en Zaandam | Pauzebegeleiding | Sterspelers',
     description:
-      'Pleincoaches en pauzebegeleiding voor basisscholen in Zaanstad: Zaandam, Koog aan de Zaan, Wormerveer, Krommenie en Assendelft. Vaste, VOG-gescreende begeleiders.',
+      'Pleincoaches en pauzebegeleiding voor basisscholen in Zaandam, Koog aan de Zaan, Wormerveer, Krommenie en Assendelft. Vaste, VOG-gescreende begeleiders.',
     eyebrow: 'Basisscholen in Zaanstad',
     h1: 'Pleincoach en pauzebegeleiding in Zaanstad',
     intro: [
       'Sterspelers levert vaste, VOG-gescreende pleincoaches aan basisscholen in heel Zaanstad: van Zaandam tot Krommenie en van Assendelft tot Wormerveer. Je bereikt ons op ons Zaanse nummer, 075 234 0345.',
-      'We zijn op zoek naar onze eerste partnerscholen in de regio en komen graag kennismaken.',
+      'We werken op basisscholen door heel Nederland en komen ook in Zaanstad graag bij je langs voor een kennismaking.',
     ],
     image: heroImage,
     imageAlt: 'Kinderen spelen buiten op het schoolplein onder begeleiding van een pleincoach van Sterspelers in Zaanstad',
@@ -467,7 +467,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         heading: 'Pleincoaches voor scholen in Zaandam en omgeving',
         paragraphs: [
-          'Of je school nu in Zaandam, Koog aan de Zaan, Zaandijk, Wormerveer, Krommenie, Assendelft of Westzaan staat: onze pleincoaches komen naar je toe. Zaanstad is samen met Amsterdam ons werkgebied, zodat we snel kunnen schakelen als er onverwacht iets verandert in het rooster.',
+          'Of je school nu in Zaandam, Koog aan de Zaan, Zaandijk, Wormerveer, Krommenie, Assendelft of Westzaan staat: onze pleincoaches komen naar je toe. Zaanstad is een van de regio’s waar we actief zijn, naast Amsterdam en de rest van Nederland.',
           'Een pleincoach begeleidt het spel tijdens de pauze, houdt overzicht op het plein en helpt kinderen die het lastig vinden om aansluiting te vinden. Zo blijft de pauze veilig en actief, en hoeven leerkrachten niet zelf de pleindienst te draaien.',
         ],
       },
@@ -514,7 +514,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         question: 'Werken jullie al met scholen in Zaanstad?',
         answer:
-          'We zijn op dit moment op zoek naar onze eerste partnerscholen in Zaanstad en Amsterdam. Juist daarom maken we graag tijd voor een uitgebreide kennismaking.',
+          'We zijn op dit moment op zoek naar onze eerste partnerscholen, in Zaanstad en in de rest van Nederland. Juist daarom maken we graag tijd voor een uitgebreide kennismaking.',
       },
       {
         question: 'Hoe snel kunnen jullie starten op een school in Zaandam?',
@@ -543,12 +543,12 @@ export const CONTENT_PAGES: ContentPageData[] = [
     kind: 'local',
     title: 'Pleincoach Amsterdam | Pauzebegeleiding basisscholen | Sterspelers',
     description:
-      'Pleincoaches en pauzebegeleiding voor basisscholen in Amsterdam, van Noord tot Zuidoost. Vaste, VOG-gescreende begeleiders die leerkrachten ontlasten. Plan een kennismaking.',
+      'Pleincoaches en pauzebegeleiding voor basisscholen in heel Amsterdam, van Noord tot Zuidoost. Vaste, VOG-gescreende begeleiders. Plan een kennismaking.',
     eyebrow: 'Basisscholen in Amsterdam',
     h1: 'Pleincoach en pauzebegeleiding in Amsterdam',
     intro: [
       'Amsterdamse basisscholen hebben vaak een druk plein en een krap team. Sterspelers levert vaste, VOG-gescreende pleincoaches die de pauze in goede banen leiden, zodat leerkrachten hun eigen pauze terugkrijgen.',
-      'We werken in alle stadsdelen en zijn op zoek naar onze eerste partnerscholen in Amsterdam.',
+      'We werken in alle stadsdelen en in de rest van Nederland, en zijn op zoek naar onze eerste partnerscholen.',
     ],
     image: buitenspelenImage,
     imageAlt: 'Pleincoach van Sterspelers begeleidt kinderen tijdens het buitenspelen op een Amsterdams schoolplein',
@@ -603,7 +603,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         question: 'Werken jullie al met scholen in Amsterdam?',
         answer:
-          'We zijn op dit moment op zoek naar onze eerste partnerscholen in Amsterdam en Zaanstad. We nemen graag de tijd om je school goed te leren kennen.',
+          'We zijn op dit moment op zoek naar onze eerste partnerscholen, in Amsterdam en in de rest van Nederland. We nemen graag de tijd om je school goed te leren kennen.',
       },
       {
         question: 'Ons schoolplein is klein. Werkt een pleincoach dan ook?',
