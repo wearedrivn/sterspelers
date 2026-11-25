@@ -84,7 +84,7 @@ export const SERVICES: ServiceItem[] = [
       'Voldoet aan de geldende kwaliteitsnormen'
     ],
     details: {
-      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving tijdens de pauze. Onze begeleiders hebben een pedagogische achtergrond en zorgen voor rust, structuur en een naadloze overgang naar het buitenspelen.',
+      overview: 'Met onze Kinderbegeleiding bieden we een professionele en warme omgeving tijdens de pauze. Onze begeleiders zijn getraind via de Sterspelers Academie en zorgen voor rust, structuur en een naadloze overgang naar het buitenspelen.',
       targetAge: 'Basisonderwijs & Speciaal Basisonderwijs',
       keyBenefits: [
         'Vaste en herkenbare gezichten voor kinderen en ouders',
@@ -115,7 +115,7 @@ export const SERVICES: ServiceItem[] = [
       targetAge: '4 t/m 16 jaar',
       keyBenefits: [
         'Direct inzetbaar voor de Rijke Schooldag',
-        'Professionele gastdocenten en ervaren trainers',
+        'Vaste trainers per school of groep',
         'Schoolpleinmateriaal desgewenst via Sterspelers aan te schaffen'
       ],
       certification: 'VOG-gescreend & getraind via de Sterspelers Academie'
@@ -142,9 +142,9 @@ export const VALUES: ValueProp[] = [
     iconName: 'Award',
     title: 'Professioneel & Vaste Gezichten',
     subtitle: 'Echte partners voor uw school',
-    description: 'Wij werken met vaste, opgeleide begeleiders die het schoolklimaat kennen en direct samenwerken met de schoolleiding.',
+    description: 'Wij werken met vaste begeleiders, getraind via de Sterspelers Academie, die het schoolklimaat kennen en direct samenwerken met de schoolleiding.',
     keyPoints: [
-      'Vaste poule van gekwalificeerde krachten',
+      'Vaste poule van VOG-gescreende begeleiders',
       'Continuïteitsgarantie bij vervanging',
       'Periodieke kwaliteitsaudits & voortgangsgesprekken'
     ],
@@ -228,8 +228,8 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-2',
     category: 'scholen',
-    question: 'Aan welke pedagogische eisen en kwalificaties voldoen de begeleiders?',
-    answer: 'Al onze begeleiders bezitten een Verklaring Omtrent het Gedrag (VOG) en een pedagogische of sportgerelateerde opleiding (MBO/HBO Sport en Bewegen, ALO, PABO of Pedagogiek). Bovendien volgen zij jaarlijks trainingen aan onze eigen Sterspelers Academie.'
+    question: 'Wie zijn de begeleiders van Sterspelers?',
+    answer: 'Al onze begeleiders hebben een geldige Verklaring Omtrent het Gedrag (VOG) en worden getraind via onze eigen Sterspelers Academie, onder meer in spelbegeleiding, een positieve benadering van kinderen en het omgaan met lastige situaties. Ze staan vast op dezelfde school, zodat kinderen en het team hen goed leren kennen.'
   },
   {
     id: 'faq-3',

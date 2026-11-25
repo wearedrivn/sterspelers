@@ -106,7 +106,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
             ],
           },
           {
-            heading: 'Veilig en goed opgeleid',
+            heading: 'Veilig en getraind',
             paragraphs: [
               'Alle pleincoaches hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie, waar we werken aan spelbegeleiding, positieve benadering en omgaan met lastige situaties.',
             ],
