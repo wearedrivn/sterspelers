@@ -61,7 +61,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     eyebrow: 'Pleincoaches basisschool',
     h1: 'Een vaste pleincoach voor basisscholen',
     intro: [
-      'Een pleincoach van Sterspelers zorgt ervoor dat de pauze weer een pauze is: voor de kinderen én voor je leerkrachten. Onze pleincoaches zijn VOG-gescreend, BHV-gecertificeerd en komen elke week opnieuw naar dezelfde school.',
+      'Een pleincoach van Sterspelers zorgt ervoor dat de pauze weer een pauze is: voor de kinderen én voor je leerkrachten. Onze pleincoaches zijn VOG-gescreend, getraind via de Sterspelers Academie en komen elke week opnieuw naar dezelfde school.',
       'Wil je een pleincoach inhuren voor je basisschool in Zaanstad of Amsterdam? Hieronder lees je wat een pleincoach doet, hoe we werken en hoe je start.',
     ],
     image: buitenspelenImage,
@@ -72,6 +72,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
         paragraphs: [
           'Een pleincoach is een vaste begeleider op het schoolplein tijdens de pauzes. Hij of zij houdt overzicht, zet spelvormen op, helpt kinderen die nergens aansluiting vinden en grijpt in als een spel uit de hand loopt. Het verschil met een pleinwacht is dat een pleincoach niet alleen toezicht houdt, maar het spel actief begeleidt.',
           'Onze pleincoaches werken met duidelijke spelzones op het plein, zodat drukke balspellen, rustige spellen en vrij spelen elkaar niet in de weg zitten. Kinderen weten waar ze terechtkunnen en wat de afspraken zijn. Dat geeft houvast, zeker voor kinderen die het plein spannend vinden.',
+          'Daarbij werken we met het spelmateriaal dat je school al heeft. Is dat beperkt of aan vervanging toe? Dan kun je via Sterspelers schoolpleinmateriaal aanschaffen, afgestemd op je plein en de leeftijd van de kinderen.',
         ],
       },
       {
@@ -107,7 +108,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
           {
             heading: 'Veilig en goed opgeleid',
             paragraphs: [
-              'Alle pleincoaches hebben een geldige VOG en een BHV-certificaat. Daarnaast volgen ze trainingen aan de Sterspelers Academie, waar we werken aan spelbegeleiding, positieve benadering en omgaan met lastige situaties.',
+              'Alle pleincoaches hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie, waar we werken aan spelbegeleiding, positieve benadering en omgaan met lastige situaties.',
             ],
           },
         ],
@@ -133,7 +134,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         question: 'Zijn de pleincoaches gescreend?',
         answer:
-          'Ja. Elke pleincoach heeft een geldige Verklaring Omtrent het Gedrag (VOG) en een BHV-certificaat, en volgt trainingen aan de Sterspelers Academie.',
+          'Ja. Elke pleincoach heeft een geldige Verklaring Omtrent het Gedrag (VOG) en volgt trainingen aan de Sterspelers Academie.',
       },
       {
         question: 'Wat gebeurt er als een pleincoach ziek is?',
@@ -202,7 +203,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         heading: 'Betrouwbaar, ook als het tegenzit',
         paragraphs: [
-          'Pauzebegeleiding uitbesteden werkt alleen als je erop kunt rekenen. Alle begeleiders hebben een geldige VOG en zijn BHV-gecertificeerd. Ze volgen trainingen aan de Sterspelers Academie. En valt een begeleider uit, dan staat er binnen 60 minuten vervanging op locatie. Er hoeft dus nooit alsnog een leerkracht naar buiten.',
+          'Pauzebegeleiding uitbesteden werkt alleen als je erop kunt rekenen. Alle begeleiders hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie. En valt een begeleider uit, dan staat er binnen 60 minuten vervanging op locatie. Er hoeft dus nooit alsnog een leerkracht naar buiten.',
           'Omdat de begeleiders via Sterspelers werken, heb je als school geen werkgeversrisico en geen planningszorgen. Wij regelen roosters, vervanging en kwaliteit; jij houdt het overzicht via vaste evaluatiemomenten.',
         ],
       },
@@ -288,7 +289,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
           {
             heading: 'Gescreend en getraind',
             paragraphs: [
-              'Al onze overblijfkrachten hebben een geldige VOG en een BHV-certificaat. Ze volgen trainingen aan de Sterspelers Academie, onder meer in spelbegeleiding en een positieve, duidelijke benadering van kinderen.',
+              'Al onze overblijfkrachten hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie, onder meer in spelbegeleiding en een positieve, duidelijke benadering van kinderen.',
             ],
           },
           {
@@ -356,7 +357,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
     h1: 'Sportclinics en naschoolse activiteiten voor de Rijke Schooldag',
     intro: [
       'Steeds meer basisscholen bieden kinderen een Rijke Schooldag: een dag waarin naast lessen ook ruimte is voor sport, beweging, cultuur en ontmoeting. Sterspelers verzorgt sportclinics en naschoolse activiteiten die daarin passen.',
-      'Onze trainers zijn VOG-gescreend en BHV-gecertificeerd, en we stemmen het programma af op de doelen van je school of gemeente.',
+      'Onze trainers zijn VOG-gescreend en getraind via de Sterspelers Academie, en we stemmen het programma af op de doelen van je school of gemeente.',
     ],
     image: activiteitenImage,
     imageAlt: 'Kinderen doen mee aan een sportclinic van Sterspelers als onderdeel van de Rijke Schooldag',
@@ -384,13 +385,13 @@ export const CONTENT_PAGES: ContentPageData[] = [
         heading: 'Hoe we een programma opzetten',
         paragraphs: [
           'We beginnen met een gesprek over je doelen: wil je kinderen meer laten bewegen, nieuwe sporten laten ontdekken, of juist werken aan samenwerken en zelfvertrouwen? Daarna stellen we een programma voor met vaste trainers, een planning en de benodigde materialen.',
-          'Onze trainers nemen hun eigen sport- en spelmaterialen mee. Ze werken met kleine, haalbare doelen per les, zodat ieder kind kan meedoen, ongeacht het niveau. Plezier staat voorop: een kind dat met een goed gevoel naar huis gaat, komt de volgende keer terug.',
+          'Onze trainers werken met het sport- en spelmateriaal van de school. Is dat er nog niet of onvoldoende, dan kan de school via Sterspelers geschikt materiaal aanschaffen. De trainers werken met kleine, haalbare doelen per les, zodat ieder kind kan meedoen, ongeacht het niveau. Plezier staat voorop: een kind dat met een goed gevoel naar huis gaat, komt de volgende keer terug.',
         ],
         subsections: [
           {
             heading: 'Voor scholen',
             paragraphs: [
-              'Voor scholen nemen we de organisatie van de activiteit volledig over. Je hoeft geen trainers te zoeken of materialen te regelen. Je leerkrachten worden niet extra belast.',
+              'Voor scholen nemen we de organisatie van de activiteit volledig over. Je hoeft geen trainers te zoeken. Je leerkrachten worden niet extra belast.',
             ],
           },
           {
@@ -404,7 +405,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         heading: 'Veilig en betrouwbaar',
         paragraphs: [
-          'Ook bij naschoolse activiteiten werken we met vaste begeleiders. Iedere trainer heeft een geldige VOG en een BHV-certificaat en volgt trainingen aan de Sterspelers Academie. Valt een trainer uit, dan zorgen we binnen 60 minuten voor vervanging.',
+          'Ook bij naschoolse activiteiten werken we met vaste begeleiders. Iedere trainer heeft een geldige VOG en volgt trainingen aan de Sterspelers Academie. Valt een trainer uit, dan zorgen we binnen 60 minuten voor vervanging.',
           'Combineer je de activiteiten met onze pleincoaches of pauzebegeleiding? Dan zien kinderen dezelfde vertrouwde gezichten op het plein en bij de clinics. Dat maakt de drempel om mee te doen lager, zeker voor kinderen die nieuwe activiteiten spannend vinden.',
         ],
       },
@@ -426,8 +427,9 @@ export const CONTENT_PAGES: ContentPageData[] = [
           'Allebei is mogelijk. We verzorgen clinics tijdens schooltijd, bijvoorbeeld tijdens een themaweek, en naschoolse activiteiten in blokken van meerdere weken.',
       },
       {
-        question: 'Moeten we zelf materialen regelen?',
-        answer: 'Nee, onze trainers nemen de benodigde sport- en spelmaterialen mee.',
+        question: 'Nemen jullie zelf sport- en spelmateriaal mee?',
+        answer:
+          'Nee, we werken met het materiaal van de school. Heeft je school nog niet het juiste materiaal, dan kun je via Sterspelers schoolpleinmateriaal aanschaffen. We adviseren je graag over wat past bij de activiteiten.',
       },
       {
         question: 'Kunnen jullie op meerdere scholen tegelijk werken?',
@@ -498,7 +500,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
       {
         heading: 'Veilig, vast en betrouwbaar',
         paragraphs: [
-          'Al onze begeleiders hebben een geldige VOG en een BHV-certificaat en volgen trainingen aan de Sterspelers Academie. Kinderen zien elke week dezelfde gezichten. Valt een begeleider uit, dan staat er binnen 60 minuten een vervanger op je school. Je hoeft zelf niets te regelen.',
+          'Al onze begeleiders hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie. Kinderen zien elke week dezelfde gezichten. Valt een begeleider uit, dan staat er binnen 60 minuten een vervanger op je school. Je hoeft zelf niets te regelen.',
           'Je bereikt ons direct op 075 234 0345 of via info@sterspelers.nl.',
         ],
       },
@@ -588,7 +590,7 @@ export const CONTENT_PAGES: ContentPageData[] = [
         heading: 'Zo starten we op jouw school',
         paragraphs: [
           'We beginnen met een kennismaking op locatie: we bekijken het plein, de pauzetijden en de afspraken die jullie al hebben. Daarna krijg je een voorstel op maat. Na jouw akkoord stellen we het vaste team voor en plannen we een proefdag met kinderen en team.',
-          'Al onze begeleiders hebben een geldige VOG en een BHV-certificaat en volgen trainingen aan de Sterspelers Academie. Bij uitval staat er binnen 60 minuten een vervanger op je school.',
+          'Al onze begeleiders hebben een geldige VOG en volgen trainingen aan de Sterspelers Academie. Bij uitval staat er binnen 60 minuten een vervanger op je school.',
         ],
       },
     ],

@@ -53,7 +53,7 @@ export const SERVICES: ServiceItem[] = [
     audience: 'Basisscholen',
     highlights: [
       'Gecertificeerde spelbegeleiders op het plein',
-      'Actieve spelmaterialen & thematische zones',
+      'Thematische spelzones met het materiaal van de school',
       'Duidelijke spelzones en vaste afspraken op het plein'
     ],
     details: {
@@ -65,7 +65,7 @@ export const SERVICES: ServiceItem[] = [
         'Kinderen komen energiek en gefocust terug in de klas',
         'Inclusieve spelvormen voor ieder bewegingsniveau'
       ],
-      certification: 'VOG-gescreend & BHV-gecertificeerd'
+      certification: 'VOG-gescreend & getraind via de Sterspelers Academie'
     }
   },
   {
@@ -92,7 +92,7 @@ export const SERVICES: ServiceItem[] = [
         'Koppeling tussen schoolvisie en begeleiding',
         'Continuïteit gegarandeerd bij ziekte of uitval'
       ],
-      certification: 'VOG-gescreend & BHV-gecertificeerd'
+      certification: 'VOG-gescreend & getraind via de Sterspelers Academie'
     }
   },
   {
@@ -108,7 +108,7 @@ export const SERVICES: ServiceItem[] = [
     highlights: [
       'Clinics in atletiek, balvaardigheid, dans & freerun',
       'Maatwerk programma’s voor BLA/Rijke Schooldag',
-      'Vaste trainers en eigen sport- en spelmaterialen'
+      'Vaste trainers die het programma op maat maken'
     ],
     details: {
       overview: 'Onze speciale activiteiten stimuleren de motorische en sociale ontwikkeling van kinderen buiten het reguliere onderwijsprogramma. Ideaal ter invulling van de Rijke Schooldag, vakantiesport en gemeentelijke subsidietrajecten.',
@@ -116,9 +116,9 @@ export const SERVICES: ServiceItem[] = [
       keyBenefits: [
         'Direct inzetbaar voor de Rijke Schooldag',
         'Professionele gastdocenten en ervaren trainers',
-        'Inclusief alle professionele sport- en spelmaterialen'
+        'Schoolpleinmateriaal desgewenst via Sterspelers aan te schaffen'
       ],
-      certification: 'VOG-gescreend & BHV-gecertificeerd'
+      certification: 'VOG-gescreend & getraind via de Sterspelers Academie'
     }
   }
 ];
@@ -132,7 +132,7 @@ export const VALUES: ValueProp[] = [
     description: 'Iedere Sterspeler is in het bezit van een geldige VOG en heeft onze interne Veiligheidsacademie doorlopen.',
     keyPoints: [
       '100% VOG-gecontroleerd personeel',
-      'BHV gecertificeerd',
+      'Opgeleid via de Sterspelers Academie',
       'Strikte protocollen voor calamiteiten'
     ],
     badge: 'Gegarandeerde Veiligheid'
@@ -194,7 +194,7 @@ export const STEPS: StepItem[] = [
     number: '02',
     title: 'Op Maat Implementatie & Koppeling',
     duration: 'Week 2-3',
-    description: 'Selectie van vaste Sterspelers-begeleiders die passen bij de identiteit van de school. Inrichting van spelzones en materialen.',
+    description: 'Selectie van vaste Sterspelers-begeleiders die passen bij de identiteit van de school. Inrichting van spelzones met het spelmateriaal van de school.',
     details: [
       'Voorstel van het vaste team aan de schoolleiding',
       'Afstemming van het pedagogisch protocol & de huisregels',
@@ -229,13 +229,19 @@ export const FAQS: FaqItem[] = [
     id: 'faq-2',
     category: 'scholen',
     question: 'Aan welke pedagogische eisen en kwalificaties voldoen de begeleiders?',
-    answer: 'Al onze begeleiders bezitten een Verklaring Omtrent het Gedrag (VOG), een geldige BHV-certificering en een pedagogische of sportgerelateerde opleiding (MBO/HBO Sport en Bewegen, ALO, PABO of Pedagogiek). Bovendien volgen zij jaarlijks trainingen aan onze eigen Sterspelers Academie.'
+    answer: 'Al onze begeleiders bezitten een Verklaring Omtrent het Gedrag (VOG) en een pedagogische of sportgerelateerde opleiding (MBO/HBO Sport en Bewegen, ALO, PABO of Pedagogiek). Bovendien volgen zij jaarlijks trainingen aan onze eigen Sterspelers Academie.'
   },
   {
     id: 'faq-3',
     category: 'scholen',
     question: 'Kunnen we Sterspelers inzetten via subsidievoorzieningen zoals de Rijke Schooldag?',
     answer: 'Ja, absoluut. Onze programma’s en na-schoolse clinics zijn volledig afgestemd op de subsidievoorwaarden van het Programma School en Omgeving (Rijke Schooldag) en gemeentelijke Sportakkoorden. Wij helpen direct mee bij de subsidieaanvraag.'
+  },
+  {
+    id: 'faq-materiaal',
+    category: 'scholen',
+    question: 'Nemen de begeleiders zelf spelmateriaal mee?',
+    answer: 'Nee, onze begeleiders werken met het spelmateriaal van de school. Heeft uw school nog onvoldoende of verouderd materiaal? Dan kunt u via Sterspelers schoolpleinmateriaal aanschaffen. We adviseren u graag over wat bij uw plein en leerlingen past.'
   },
   {
     id: 'faq-4',

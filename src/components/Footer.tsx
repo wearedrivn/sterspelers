@@ -53,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
                   100% VOG Geverifieerd
                 </span>
                 <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold border border-slate-700">
-                  BHV Gecertificeerd
+                  Sterspelers Academie
                 </span>
               </div>
             </div>
